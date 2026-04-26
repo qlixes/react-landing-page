@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "home": "首页",
+        "about": "关于我们",
+        "product": "产品",
+        "service": "服务",
+        "market": "市场",
+        "contact": "联系我们"
+    },
+    "hero": {
+        "title": "SUNSSE BARU INDONESIA",
+        "subtitle": "淀粉、甜味剂工业解决方案全球供应商",
+        "description": "设计、制造、安装调试、交付",
+        "cta": {
+            "service": "我们的服务",
+            "contact": "联系我们"
+        }
+    }
+}

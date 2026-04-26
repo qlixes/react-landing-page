@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "home": "BERANDA",
+        "about": "TENTANG",
+        "product": "PRODUK",
+        "service": "LAYANAN",
+        "market": "PASAR",
+        "contact": "KONTAK"
+    },
+    "hero": {
+        "title": "SUNSSE BARU INDONESIA",
+        "subtitle": "Pasokan Global Pati, Pemanis, dan Solusi Industri",
+        "description": "Kami Merancang, Memproduksi, Memasang dan Mengirim Secara Global.",
+        "cta": {
+            "service": "Layanan Kami",
+            "contact": "Hubungi Kami"
+        }
+    }
+}

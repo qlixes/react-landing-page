@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "home": "HOME",
+        "about": "ABOUT",
+        "product": "PRODUCTS",
+        "service": "SERVICES",
+        "market": "MARKETS",
+        "contact": "CONTACT"
+    },
+    "hero": {
+        "title": "SUNSSE BARU INDONESIA",
+        "subtitle": "Global Supply of Starch, Sweeteners, and Industrial Solutions",
+        "description": "Design. Manufacture. Install. Deliver.",
+        "cta": {
+            "service": "Our Services",
+            "contact": "Get In Touch"
+        }
+    }
+}
