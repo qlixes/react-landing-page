@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from '@/components/common/Navbar';
+import Hero from '@/components/sections/Hero';
 
 function App() {
     return (
@@ -8,9 +9,7 @@ function App() {
                 {/* Memasang Navbar */}
                 <Navbar />
 
-                <main className="container mx-auto pt-24 px-4">
-
-                </main>
+                <Hero />
             </div>
         </>
     )
