@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight, Package, FileText, Cog, ChevronRight, Eye, Maximize2 } from 'lucide-react';
+import { X, ArrowRight, FileText, Cog, ChevronRight, Eye, Maximize2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function Product() {
