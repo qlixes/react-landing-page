@@ -52,5 +52,96 @@
             "satisfaction": "Client Satisfaction"
         },
         "learn_more": "Learn More"
+    },
+    "product": {
+        "badge": "Our Products",
+        "lists": [
+            {
+                "label": "Tapioca/Cassava Starch Machines",
+                "slogan": "Reliable starch. Scalable growth. Supporting your industry with consistent quality and flexibility.",
+                "overview": {
+                    "description": [
+                        "Cassava starch is a highly versatile raw material, widely used in vermicelli production and essential for producing high-quality modified starch across industries such as paper, textile, food, and pharmaceuticals. It can also be processed into value-added sweeteners like glucose, fructose, and maltose, making it a reliable solution for food, beverage, and health product manufacturers.",
+                        "Engineered for efficiency and built for industry, our solutions deliver consistent cassava starch performance for scalable production. With its adaptability and stable quality, cassava starch supports higher efficiency, improved product quality, and long-term growth."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "description": [
+                        "We supply complete tapioca and cassava starch processing lines — from raw cassava root washing all the way through to final dried starch packaging. Each system is engineered for high throughput, minimal waste, and food-grade output standards."
+                    ],
+                    "list": [
+                        "Feeding hopper, belt conveyor & cutting machines",
+                        "Fine fiber sieve & desander separation",
+                        "Paddle washing machine & sifter sieve",
+                        "Full turnkey plant design & installation available",
+                        "Rasper for cell-breaking & starch extraction",
+                        "Hydrocyclone starch purification systems",
+                        "Flash dryer & dry sieve for final product"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Cassava & Tapioca Starch",
+                        "image": "product_cassava_tapioka_1.jpg"
+                    },
+                    {
+                        "name": "Complete Production Line",
+                        "image": "product_cassava_tapioka_2.jpg"
+                    },
+                    {
+                        "name": "3D Factory Layout",
+                        "image": "product_cassava_tapioka_3.jpg"
+                    },
+                    {
+                        "name": "Production Process Steps",
+                        "image": "product_cassava_tapioka_4.jpg"
+                    }
+                ]
+            },
+            {
+                "label": "Cornstarch Machines",
+                "slogan": "Precision milling. Consistent starch. Delivering quality from kernel to final product.",
+                "overview": {
+                    "description": [
+                        "Corn starch is one of the most widely used industrial starches, serving as a key raw material in food, pharmaceutical, textile, and paper industries. It can be further processed into high-value derivatives such as glucose syrup, fructose, maltodextrin, and modified starch, making it an essential input for a broad range of manufacturing processes.",
+                        "Our corn starch processing solutions are engineered for high efficiency and consistent output, supporting scalable production with stable quality. From wet milling to drying and packaging, our systems are built to maximize yield while minimizing energy and water consumption."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "description": [
+                        "We provide complete corn starch wet milling and processing lines — from raw corn kernel cleaning through to final dried starch packaging. Each system is designed for high throughput, minimal waste, and food-grade output standards."
+                    ],
+                    "list": [
+                        "Corn cleaning & steeping tanks",
+                        "Fine grinding mill & fiber washing system",
+                        "Hydrocyclone starch washing & concentration",
+                        "Full turnkey plant design & installation available",
+                        "Degerminator & germ separator",
+                        "Gluten separation & centrifuge purification",
+                        "Flash dryer & dry sieve for final product"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Cornstarch",
+                        "image": "product_corn_1.jpeg"
+                    },
+                    {
+                        "name": "Dried Corn Kernels",
+                        "image": "product_corn_2.jpeg"
+                    },
+                    {
+                        "name": "Complete Corn Wet Milling Line",
+                        "image": "product_corn_3.jpeg"
+                    },
+                    {
+                        "name": "Cornstarch Processing Machine",
+                        "image": "product_corn_4.jpeg"
+                    }
+                ]
+            }
+        ]
     }
 }
