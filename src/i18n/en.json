@@ -61,6 +61,7 @@
                 "slogan": "Reliable starch. Scalable growth. Supporting your industry with consistent quality and flexibility.",
                 "background": "product_cassava_tapioka_1.jpg",
                 "overview": {
+                    "label": "Overview",
                     "description": [
                         "Cassava starch is a highly versatile raw material, widely used in vermicelli production and essential for producing high-quality modified starch across industries such as paper, textile, food, and pharmaceuticals. It can also be processed into value-added sweeteners like glucose, fructose, and maltose, making it a reliable solution for food, beverage, and health product manufacturers.",
                         "Engineered for efficiency and built for industry, our solutions deliver consistent cassava starch performance for scalable production. With its adaptability and stable quality, cassava starch supports higher efficiency, improved product quality, and long-term growth."
@@ -68,6 +69,7 @@
                     "list": []
                 },
                 "component": {
+                    "label": "Machine Components",
                     "description": [
                         "We supply complete tapioca and cassava starch processing lines — from raw cassava root washing all the way through to final dried starch packaging. Each system is engineered for high throughput, minimal waste, and food-grade output standards."
                     ],
@@ -109,6 +111,7 @@
                 "slogan": "Precision milling. Consistent starch. Delivering quality from kernel to final product.",
                 "background": "product_corn_1.jpeg",
                 "overview": {
+                    "label": "Overview",
                     "description": [
                         "Corn starch is one of the most widely used industrial starches, serving as a key raw material in food, pharmaceutical, textile, and paper industries. It can be further processed into high-value derivatives such as glucose syrup, fructose, maltodextrin, and modified starch, making it an essential input for a broad range of manufacturing processes.",
                         "Our corn starch processing solutions are engineered for high efficiency and consistent output, supporting scalable production with stable quality. From wet milling to drying and packaging, our systems are built to maximize yield while minimizing energy and water consumption."
@@ -116,6 +119,7 @@
                     "list": []
                 },
                 "component": {
+                    "label": "Machine Components",
                     "description": [
                         "We provide complete corn starch wet milling and processing lines — from raw corn kernel cleaning through to final dried starch packaging. Each system is designed for high throughput, minimal waste, and food-grade output standards."
                     ],
@@ -149,6 +153,321 @@
                         "name": "Cornstarch Processing Machine",
                         "image": "product_corn_4.jpeg",
                         "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Sweetener Machines",
+                "slogan": "From starch to sweetness — precision-engineered lines for every sweetener grade and scale.",
+                "background": "sweetener_machine_1.png",
+                "overview": {
+                    "label": "Overview",
+                    "description": [
+                        "Sweetener processing machines are purpose-built systems for converting starch — primarily corn or cassava starch — into a wide spectrum of refined sweeteners including maltodextrin, maltose syrup, glucose syrup, and high-fructose corn syrup (HFCS). These products are integral to food and beverage manufacturing, confectionery, pharmaceuticals, and fermentation industries worldwide.",
+                        "Our sweetener processing lines leverage advanced enzymatic hydrolysis, ion-exchange purification, and multi-effect evaporation technologies to deliver sweeteners with precise DE values, high clarity, and consistent sweetness profiles. Each plant is engineered for full automation, hygienic operation, and scalable output — from pilot-scale to full industrial capacity."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Machine Components",
+                    "description": [
+                        "We provide complete turnkey sweetener production lines covering all stages from starch slurry preparation to final product packaging — engineered for food-grade quality and continuous high-volume output."
+                    ],
+                    "list": [
+                        "Starch slurry preparation & dosing tanks",
+                        "Jet cooker / liquefaction reactor (enzymatic)",
+                        "Saccharification & isomerization vessels",
+                        "Plate & frame filter press for deproteinization",
+                        "Activated carbon decolorization columns",
+                        "Ion exchange resin columns for demineralization",
+                        "Multi-effect evaporator & vacuum concentrator",
+                        "Crystallization tanks & centrifugal separators",
+                        "Spray dryer / fluidized bed dryer (for powder output)",
+                        "Full turnkey plant design & installation available"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Sweetener Processing Line",
+                        "image": "sweetener_machine_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "Complete Production Line",
+                        "image": "sweetener_machine_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Ion Exchange Purification",
+                        "image": "sweetener_machine_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "3D Factory Layout",
+                        "image": "sweetener_machine_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Sweetener Products (Maltodextrine, Maltose, Glucose, Fructose)",
+                "slogan": "Pure. Consistent. Versatile — sweetener products engineered to perform in every application.",
+                "background": "product_sweetener_1.png",
+                "overview": {
+                    "label": "Overview",
+                    "description": [
+                        "We supply a comprehensive range of starch-derived sweetener products, manufactured to food-grade and industrial-grade standards. Our sweeteners are produced through controlled enzymatic hydrolysis and purification processes, ensuring consistent purity, stable DE values, and reliable performance across every batch.",
+                        "Whether you require a low-sweetness bulking agent, a highly fermentable glucose syrup, or a high-intensity fructose sweetener, our product portfolio covers the full spectrum of sweetener grades — suitable for beverages, confectionery, baked goods, pharmaceuticals, and fermentation applications."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Product Range",
+                    "description": [
+                        "Our sweetener product lineup includes four core categories, each available in customizable DE values, concentrations, and packaging formats:"
+                    ],
+                    "list": [
+                        "Maltodextrin — Low DE (DE 5-20), water-soluble powder; used as a bulking agent, carrier, and spray-dry aid in food and pharma",
+                        "Maltose Syrup — High maltose content (40-75%); mild sweetness, excellent heat stability, ideal for candy, ice cream & bakery",
+                        "Glucose Syrup (DE 42 / DE 63) — Versatile liquid sweetener; used in confectionery, beverages, canning & fermentation",
+                        "Fructose Syrup (HFCS 42 / HFCS 55) — High sweetness, low viscosity; widely used in soft drinks, juice & dairy applications"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "MALTODEXTRIN POWDER",
+                        "image": "product_sweetener_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "MALTOSE SYRUP",
+                        "image": "product_sweetener_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "GLUCOSE SYRUP",
+                        "image": "product_sweetener_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "FRUCTOSE SYRUP",
+                        "image": "product_sweetener_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Liquid Syrup",
+                "slogan": "Fluid. Functional. Flavourful — liquid syrups crafted for precision performance at every production scale.",
+                "background": "liquid_syrup_1.jpeg",
+                "overview": {
+                    "label": "Overview",
+                    "description": [
+                        "Our liquid syrup product line delivers a versatile range of ready-to-use sweetening and functional solutions, developed through advanced starch hydrolysis and sugar inversion processes. Designed to meet the evolving needs of food, beverage, pharmaceutical, and industrial applications, our syrups ensure consistent Brix levels, controlled viscosity, and reliable shelf stability.",
+                        "From standard corn syrup for confectionery to high-purity sorbitol solutions for pharmaceutical and cosmetic use, each product is precisely formulated to support efficient and scalable production. Available in bulk tanker, IBC tote, and drum packaging, our solutions integrate seamlessly into your processing line.",
+                        "Produced in hygienic facilities and backed by certified quality management systems, we guarantee safe, consistent, and high-performance products for your business.",
+                        "Partner with us to optimize your production and elevate your product value. 👉 Contact us today to discuss your requirements."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Product Range",
+                    "description": [
+                        "Our liquid syrup lineup covers four key product types, each available in customizable Brix concentrations, purity grades, and packaging options:"
+                    ],
+                    "list": [
+                        "Corn Syrup — Standard DE 42/63 liquid glucose derived from corn starch; widely used in candy, bakery, canning, and brewing as a fermentable sweetener and humectant",
+                        "Invert Sugar Syrup — 50/50 glucose-fructose blend from sucrose inversion; high sweetness, excellent moisture retention, ideal for beverages, jams & soft-centred confectionery",
+                        "Caramel Syrup — Heat-treated liquid caramel; provides consistent colour, flavour and mild sweetness; used in sauces, bakery glazes, beverages & dairy products",
+                        "Sorbitol Syrup (70%) — Food-grade polyol solution; low-calorie, non-cariogenic; used in confectionery, pharmaceuticals, personal care & moisture-controlled food products"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "CORN SYRUP",
+                        "image": "liquid_syrup_1.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Invert Sugar Syrup",
+                        "image": "liquid_syrup_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "CARAMEL SYRUP",
+                        "image": "liquid_syrup_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "SORBITOL SYRUP",
+                        "image": "liquid_syrup_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Liquid Syrup Machines",
+                "slogan": "Engineered. Hygienic. Scalable — complete syrup processing lines built to match your production ambitions.",
+                "background": "liquid_syrup_machine_1.jpeg",
+                "overview": {
+                    "label": "Overview",
+                    "description": [
+                        "Our liquid syrup machine line delivers a complete range of industrial-grade processing equipment engineered for the production of glucose syrup, invert sugar, caramel, sorbitol, and related liquid sweetener products. Each system is designed to meet the evolving demands of food, beverage, pharmaceutical, and industrial manufacturers — ensuring precise process control, hygienic operation, and consistent output quality.",
+                        "From raw starch cooking and enzyme dosing through to multi-effect evaporation and automated filling, every machine in our lineup is built for efficiency, scalability, and long-term reliability. Our modular system approach allows flexible integration into new or existing production facilities of any capacity.",
+                        "All equipment is fabricated from food-grade stainless steel, compliant with international hygiene and safety standards, and supported by our full after-sales service network including installation, commissioning, training, and spare parts supply."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Machine Range",
+                    "description": [
+                        "Our liquid syrup machine lineup covers the full production process, with each unit available in customizable capacities and automation levels:"
+                    ],
+                    "list": [
+                        "Syrup Cooking & Mixing System — Stainless steel jacketed vessels with agitators for dissolving, liquefying and enzyme-treating starch slurry; available in batch or continuous configurations",
+                        "Filtration & Clarification Unit — Plate-and-frame or membrane filter press systems for removing impurities, activated carbon decolourisation, and ion exchange resin purification",
+                        "Evaporation & Concentration Plant — Single or multi-effect falling-film evaporators for concentrating syrup to target Brix; energy-efficient design with steam economy up to 4x",
+                        "Filling & Packaging Line — Automated filling systems for bulk tankers, IBC totes, drums, and bottles; integrated with CIP (clean-in-place) and flow metering for accurate fill weights"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "3D Line Production Liquid Syrup",
+                        "image": "liquid_syrup_machine_1.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Steam Jacketed Tank",
+                        "image": "liquid_syrup_machine_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "ION EXCHANGE SYSTEM (Purification Unit)",
+                        "image": "liquid_syrup_machine_3.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "FILLING & PACKAGING LINE",
+                        "image": "liquid_syrup_machine_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Food Grade Rice Protein Machines",
+                "slogan": "Pure. Functional. Scalable — complete rice protein processing lines built for the growing plant-based nutrition market.",
+                "background": "rice_protein_1.png",
+                "overview": {
+                    "label": "Overview",
+                    "description": [
+                        "Our food-grade rice protein machine line provides a complete set of industrial processing equipment engineered for the extraction, purification, and drying of high-purity rice protein isolate and concentrate. Designed to meet the growing demand in nutraceutical, sports nutrition, infant formula, and plant-based food industries, each system ensures consistent protein yield with clean-label compliance.",
+                        "The process integrates wet milling, enzymatic hydrolysis, centrifugal separation, ultrafiltration, and spray drying into a seamless and hygienic production flow. Our modular engineering approach allows flexible configurations—from pilot-scale units to full commercial lines with capacities exceeding several tonnes per day.",
+                        "All equipment is manufactured using food-grade materials, fully compatible with CIP/SIP systems, and built to comply with international food safety standards such as FDA, EU, and Halal requirements. Comprehensive after-sales support includes installation, operator training, and ongoing technical assistance.",
+                        "In addition to supplying advanced processing equipment, we also provide high-quality rice protein products—featuring high protein content, excellent nutritional value, and consistent premium quality to meet diverse market needs."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Machine Range",
+                    "description": [
+                        "Our rice protein machine lineup covers the complete extraction-to-packaging process, with each unit available in customizable capacities and automation levels:"
+                    ],
+                    "list": [
+                        "Rice Protein Extraction System — Wet milling and slurry preparation units for breaking down rice flour or bran into a homogeneous protein-starch slurry; includes dosing systems for enzyme and pH adjustment reagents",
+                        "Enzymatic Hydrolysis Reactor — Temperature-controlled jacketed reactors for alpha-amylase and protease enzyme treatment; precise pH and temperature monitoring for optimal protein yield and purity",
+                        "Centrifugal Separation & Ultrafiltration Unit — Decanter centrifuges and tubular membrane ultrafiltration systems for separating protein from starch, fibre, and process water; achievable protein purity of 80–90%+",
+                        "Spray Dryer Tower — High-efficiency spray drying systems converting protein concentrate into free-flowing powder; adjustable inlet/outlet temperatures and atomizer speeds for particle size and moisture control",
+                        "Packaging & Bagging Line — Automated weighing, filling, and sealing systems for bags, pouches, and bulk sacks; integrated with nitrogen flushing and metal detection for food safety compliance"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "3D PROCESSING LAYOUT",
+                        "image": "rice_protein_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "RICE PROTEIN",
+                        "image": "rice_protein_2.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "RICE PROTEIN POWDER",
+                        "image": "rice_protein_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Reactor Tank (Protein Extraction)",
+                        "image": "rice_protein_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Spare Parts",
+                "slogan": "",
+                "background": "product_spareparts_1.jpg",
+                "overview": {
+                    "label": "",
+                    "description": [
+                        ""
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "",
+                    "description": [
+                        ""
+                    ],
+                    "list": [
+                        ""
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Rasper Machine",
+                        "image": "product_spareparts_1.jpg",
+                        "description": "The rasper machine is the key equipment in the potato/cassava starch production line, which determines the extraction rate of starch. The higher the rotational speed, the finer the material is broken down, resulting in a higher starch free rate and extraction rate. All parts are made of stainless steel, available in direct-coupled and belt-drive forms. The rotor is forged from stainless steel for high strength. The unique rotor groove design makes saw blade replacement easy. Saw blades are made from special high-hardness, wear-resistant material. The rotor rotates in both directions and the saw blades are interchangeable in both directions, extending the working life of the machine and reducing operating costs."
+                    },
+                    {
+                        "name": "Rasper / Saw Blade",
+                        "image": "product_spareparts_2.jpg",
+                        "description": "Replacement saw blades for rasper machines, manufactured from high-carbon hardened steel for maximum durability and cutting efficiency. Designed to withstand the abrasive and high-moisture conditions of raw cassava processing. Available in various tooth profiles and sizes to fit different rasper drum configurations."
+                    },
+                    {
+                        "name": "Holder Saw Blade",
+                        "image": "product_spareparts_3.jpg",
+                        "description": "Heavy-duty blade holder/carrier strips used to mount and secure saw blades onto the rasper drum. Precision-engineered for tight blade spacing and even load distribution, ensuring consistent rasping performance and reduced vibration during high-speed operation."
+                    },
+                    {
+                        "name": "ESP Pump (Chemical Centrifugal Pump)",
+                        "image": "product_spareparts_4jpg",
+                        "description": "ESP series chemical centrifugal pump designed for transferring corrosive process liquids including sulfuric acid, sodium hydroxide, and other chemical reagents used in starch and sweetener processing. Constructed with corrosion-resistant materials; available in various flow rates and head configurations."
+                    },
+                    {
+                        "name": "ZJB Pump (Fiber Pump)",
+                        "image": "product_spareparts_5.jpg",
+                        "description": "The ZJB series fiber pump is a single-stage direct-coupled centrifugal pump developed to meet industry demand for conveying media containing fibrous material of a certain length. The spiral inducer design at the pump inlet significantly improves the pump's media conveying capacity. Direct drive via the extended motor shaft increases working efficiency and ensures smoother, more stable operation. Widely used in paper, chemical, starch, and environmental industries for transferring media containing fibrous material and solid suspensions."
+                    },
+                    {
+                        "name": "XMB Pump (Defoaming Pump)",
+                        "image": "product_spareparts_6.jpg",
+                        "description": "XMB series defoaming pump engineered for handling foam-prone process liquids in starch, syrup, and protein production. The unique impeller geometry breaks down foam during pumping, eliminating the need for separate defoaming agents in many applications and ensuring stable, continuous flow."
+                    },
+                    {
+                        "name": "FBZ Pump (Self-Priming Centrifugal Pump)",
+                        "image": "product_spareparts_7.jpg",
+                        "description": "FBZ series self-priming centrifugal pump capable of re-priming automatically without manual intervention. Ideal for applications where the pump is installed above the liquid level, including tank drainage, slurry transfer, and process liquid recirculation in starch and sweetener plants. Handles liquids containing small solids and air pockets."
+                    },
+                    {
+                        "name": "FVP Pump (Food Grade Centrifugal Pump)",
+                        "image": "product_spareparts_8.jpg",
+                        "description": "The FVP series food grade centrifugal pump is manufactured to the highest hygiene standards for use in food, beverage, dairy, and starch processing industries. Constructed entirely from SS316L stainless steel with food-grade seals, it is fully CIP/SIP compatible. Smooth internal surfaces prevent bacterial build-up, ensuring clean and safe transfer of food-grade liquids including syrups, protein concentrates, and starch slurries."
+                    },
+                    {
+                        "name": "Sanitary Centrifugal Pump",
+                        "image": "product_spareparts_9.jpg",
+                        "description": "The sanitary centrifugal pump is designed specifically for hygienic process applications in food, pharmaceutical, and biotechnology industries. Features a crevice-free, polished internal surface finish to prevent contamination and facilitate thorough cleaning. Fully compliant with GMP, FDA, and EHEDG hygienic design standards. Suitable for transferring sensitive process liquids such as glucose syrup, rice protein solution, and other food-grade media requiring strict sanitary conditions."
                     }
                 ]
             }

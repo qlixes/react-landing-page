@@ -16,7 +16,7 @@ export default function Product() {
     const selectedProduct = selectedIdx !== null ? productLists[selectedIdx] : null;
 
     return (
-        <section id="products" className="py-24 bg-white">
+        <section id="product" className="py-24 bg-white">
             <div className="container mx-auto px-4">
 
                 {/* Section Title */}
@@ -48,9 +48,11 @@ export default function Product() {
                                 <h3 className="text-3xl font-bold text-white uppercase mb-4 leading-[1.1] group-hover:text-gold-primary transition-colors">
                                     {product.label}
                                 </h3>
-                                <p className="text-slate-300 text-sm italic font-medium leading-relaxed opacity-90 line-clamp-3">
-                                    {product.slogan}
-                                </p>
+                                {product.slogan && (
+                                    <p className="text-slate-300 text-sm italic font-medium leading-relaxed opacity-90 line-clamp-3">
+                                        {product.slogan}
+                                    </p>
+                                )}
                             </div>
 
                             <div className="relative z-10 px-10 py-7 bg-slate-950 flex items-center justify-between group-hover:bg-gold-primary transition-all duration-300">
@@ -91,63 +93,69 @@ export default function Product() {
                                         <h2 className="text-5xl font-black text-slate-900 uppercase leading-[0.9] mb-8 tracking-tighter">
                                             {selectedProduct.label}
                                         </h2>
-                                        <div className="flex items-center gap-5">
-                                            <div className="w-1.5 self-stretch min-h-[40px] bg-gold-primary rounded-full" />
-                                            <p className="text-xl text-slate-500 italic font-medium leading-relaxed">
-                                                {selectedProduct.slogan}
-                                            </p>
-                                        </div>
+                                        {selectedProduct.slogan && (
+                                            <div className="flex items-center gap-5">
+                                                <div className="w-1.5 self-stretch min-h-[40px] bg-gold-primary rounded-full" />
+                                                <p className="text-xl text-slate-500 italic font-medium leading-relaxed">
+                                                    {selectedProduct.slogan}
+                                                </p>
+                                            </div>
+                                        )}
                                     </div>
 
                                     <div className="flex flex-col gap-20">
-                                        {/* SECTION 01: OVERVIEW */}
-                                        <div>
-                                            <div className="flex items-center gap-4 mb-8">
-                                                <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
-                                                    <FileText className="w-6 h-6" />
+                                        {/* SECTION 01: OVERVIEW - Dihapus jika label kosong */}
+                                        {selectedProduct.overview?.label && selectedProduct.overview.label.trim() !== "" && (
+                                            <div>
+                                                <div className="flex items-center gap-4 mb-8">
+                                                    <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
+                                                        <FileText className="w-6 h-6" />
+                                                    </div>
+                                                    <div>
+                                                        <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.overview.label}</h3>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.overview.label}</h3>
-                                                </div>
-                                            </div>
-                                            <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-slate-50">
-                                                {selectedProduct.overview.description.map((p: string, i: number) => (
-                                                    <p key={i}>{p}</p>
-                                                ))}
-                                            </div>
-                                        </div>
-
-                                        {/* SECTION 02: COMPONENTS */}
-                                        <div>
-                                            <div className="flex items-center gap-4 mb-8">
-                                                <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
-                                                    <Cog className="w-6 h-6" />
-                                                </div>
-                                                <div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.component.label}</h3>
-                                                </div>
-                                            </div>
-
-                                            <div className="text-slate-600 text-lg leading-relaxed mb-10 pl-4 border-l-2 border-slate-50">
-                                                {selectedProduct.component.description.map((p: string, i: number) => (
-                                                    <p key={i}>{p}</p>
-                                                ))}
-                                            </div>
-
-                                            {/* Technical Spec Box */}
-                                            <div className="bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl overflow-hidden relative">
-                                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-                                                    {selectedProduct.component.list.map((item: string, i: number) => (
-                                                        <li key={i} className="flex items-start gap-4 group/item">
-                                                            <div className="mt-1 flex items-center justify-center w-5 h-5 p-1 rounded-full bg-gold-primary/20 text-gold-primary group-hover/item:bg-gold-primary group-hover/item:text-slate-900 transition-colors">
-                                                                <ChevronRight className="w-3 h-3" />
-                                                            </div>
-                                                            <span className="font-bold text-sm text-slate-300 group-hover/item:text-white transition-colors">{item}</span>
-                                                        </li>
+                                                <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-slate-50">
+                                                    {selectedProduct.overview.description?.map((p: string, i: number) => (
+                                                        <p key={i}>{p}</p>
                                                     ))}
-                                                </ul>
+                                                </div>
                                             </div>
-                                        </div>
+                                        )}
+
+                                        {/* SECTION 02: COMPONENTS - Dihapus jika label kosong */}
+                                        {selectedProduct.component?.label && selectedProduct.component.label.trim() !== "" && (
+                                            <div>
+                                                <div className="flex items-center gap-4 mb-8">
+                                                    <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
+                                                        <Cog className="w-6 h-6" />
+                                                    </div>
+                                                    <div>
+                                                        <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.component.label}</h3>
+                                                    </div>
+                                                </div>
+
+                                                <div className="text-slate-600 text-lg leading-relaxed mb-10 pl-4 border-l-2 border-slate-50">
+                                                    {selectedProduct.component.description?.map((p: string, i: number) => (
+                                                        <p key={i}>{p}</p>
+                                                    ))}
+                                                </div>
+
+                                                {/* Technical Spec Box */}
+                                                <div className="bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl overflow-hidden relative">
+                                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                                                        {selectedProduct.component.list?.map((item: string, i: number) => (
+                                                            <li key={i} className="flex items-start gap-4 group/item">
+                                                                <div className="mt-1 flex items-center justify-center w-5 h-5 p-1 rounded-full bg-gold-primary/20 text-gold-primary group-hover/item:bg-gold-primary group-hover/item:text-slate-900 transition-colors">
+                                                                    <ChevronRight className="w-3 h-3" />
+                                                                </div>
+                                                                <span className="font-bold text-sm text-slate-300 group-hover/item:text-white transition-colors">{item}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        )}
 
                                         {/* SECTION 03: SUB-PRODUCTS (NEW) */}
                                         <div className="pb-20">
@@ -161,7 +169,7 @@ export default function Product() {
                                             </div>
 
                                             <div className="grid grid-cols-2 gap-4">
-                                                {selectedProduct.list.map((sub: any, i: number) => (
+                                                {selectedProduct.list?.map((sub: any, i: number) => (
                                                     <motion.div
                                                         key={i}
                                                         whileHover={{ scale: 1.02 }}
@@ -196,21 +204,18 @@ export default function Product() {
                 <AnimatePresence>
                     {activeSubProduct && (
                         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-6">
-                            {/* Backdrop dengan blur */}
                             <motion.div
                                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
                                 onClick={() => setActiveSubProduct(null)}
                                 className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl"
                             />
 
-                            {/* Modal Container: Menghilangkan aspect-square agar fleksibel */}
                             <motion.div
                                 initial={{ scale: 0.9, opacity: 0, y: 20 }}
                                 animate={{ scale: 1, opacity: 1, y: 0 }}
                                 exit={{ scale: 0.9, opacity: 0, y: 20 }}
                                 className="relative w-full max-w-3xl bg-white overflow-hidden shadow-2xl flex flex-col border-2 border-gold-primary"
                             >
-                                {/* Close Button */}
                                 <button
                                     onClick={() => setActiveSubProduct(null)}
                                     className="absolute top-5 right-5 z-20 bg-slate-900/50 hover:bg-red-500 backdrop-blur-md p-2.5 rounded-full text-white transition-all duration-300 group"
@@ -218,7 +223,6 @@ export default function Product() {
                                     <X className="w-5 h-5 group-hover:rotate-90 transition-transform" />
                                 </button>
 
-                                {/* 1. Image Area - Menggunakan object-contain agar gambar utuh (tidak terpotong/zoom) */}
                                 <div className="w-full bg-slate-100 flex items-center justify-center">
                                     <img
                                         src={`/assets/products/${activeSubProduct.image}`}
@@ -227,7 +231,6 @@ export default function Product() {
                                     />
                                 </div>
 
-                                {/* 2. Description Area - Conditional Rendering */}
                                 {activeSubProduct.description && activeSubProduct.description.trim() !== "" ? (
                                     <div className="p-8 md:p-12 flex flex-col items-center text-center bg-white">
                                         <div className="flex flex-col items-center mb-6">
@@ -243,7 +246,6 @@ export default function Product() {
                                         </p>
                                     </div>
                                 ) : (
-                                    /* Fallback Footer: Muncul tepat di bawah gambar jika tidak ada deskripsi */
                                     <div className="p-5 bg-slate-600 text-center w-full">
                                         <h3 className="text-sm font-black text-white uppercase tracking-[0.3em]">
                                             {activeSubProduct.name}
