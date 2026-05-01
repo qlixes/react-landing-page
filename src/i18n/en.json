@@ -15,5 +15,42 @@
             "service": "Our Services",
             "contact": "Get In Touch"
         }
+    },
+    "about": {
+        "badge": "WHO WE ARE",
+        "mission": {
+            "label": "mission",
+            "description": [
+                "To supply high-quality and innovative industrial machinery and equipment.",
+                "To enhance customer productivity through efficient and sustainable technical solutions.",
+                "To provide responsive and professional after-sales service.",
+                "To build long-term partnerships based on trust and integrity."
+            ]
+        },
+        "vision": {
+            "label": "vision",
+            "description": [
+                "To become a leading company — professional and experienced manufacturer of industrial machinery and equipment, specializing in delivering complete and integrated processing line solutions for tapioca, corn, sago, and sweetener factories to clients in Indonesia and around the world with international standards, focusing on quality, efficiency and customer satisfaction."
+            ]
+        },
+        "brand": {
+            "description": [
+                "PT Sunsse Baru Indonesia is a professional and experienced manufacturer of industrial machinery and equipment, specializing in delivering complete and integrated processing line solutions for tapioca, corn, sago, and sweetener factories to clients around the world. Sunsse is a professional equipment and turn-key engineering solution provider for Starch and Starch derivatives (also like other sweeteners, sugar alcohol, and organic acid) projects.",
+                "With over three decades of engineering expertise, we design, fabricate, and deliver high-performance machines that power large-scale agricultural and food processing plants across Asia, Europe, and beyond, ensuring reliability, efficiency, and long-term operational excellence.",
+                "Our dedicated team of skilled engineers and technical specialists ensures that every machine we produce meets the highest international quality standards — meticulously designed to last, precisely engineered to perform, and fully supported throughout its operational lifespan."
+            ],
+            "slogan": "Engineered for the World"
+        },
+        "title_part1": "Built with",
+        "title_mark_part1": "Expertise",
+        "title_part2": "Trusted by",
+        "title_mark_part2": "Customers",
+        "stats": {
+            "countries": "Countries Served",
+            "machines": "Machines Installed",
+            "experience": "Years Experience",
+            "satisfaction": "Client Satisfaction"
+        },
+        "learn_more": "Learn More"
     }
 }

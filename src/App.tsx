@@ -1,16 +1,15 @@
 import './App.css';
-import Navbar from '@/components/common/Navbar';
+import MainLayout from '@/components/layouts/MainLayout';
 import Hero from '@/components/sections/Hero';
+import About from '@/components/sections/About';
 
 function App() {
     return (
         <>
-            <div className="min-h-screen bg-gray-50">
-                {/* Memasang Navbar */}
-                <Navbar />
-
+            <MainLayout>
                 <Hero />
-            </div>
+                <About />
+            </MainLayout>
         </>
     )
 }
