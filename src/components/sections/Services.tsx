@@ -27,7 +27,7 @@ export default function Services() {
 	const services = t('service.lists', { returnObjects: true }) as any[];
 
 	return (
-		<section id="services" className="py-32 bg-[#05080a] relative overflow-hidden">
+		<section id="service" className="py-32 relative overflow-hidden scroll-mt">
 			{/* Background Decor */}
 			<div className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
 				<div className="absolute top-[10%] left-[-5%] w-[500px] h-[500px] bg-gold-primary/10 rounded-full blur-[120px]" />
@@ -38,7 +38,7 @@ export default function Services() {
 				<div className="flex flex-col lg:flex-row gap-16">
 
 					{/* LEFT SIDE: Sticky Header & Trust Badge */}
-					<div className="lg:w-1/3 lg:sticky lg:top-32 h-fit">
+					<div className="lg:w-1/3 lg:sticky h-fit">
 						<motion.div
 							initial={{ opacity: 0, x: -30 }}
 							whileInView={{ opacity: 1, x: 0 }}
@@ -53,10 +53,10 @@ export default function Services() {
 								</span>
 							</div>
 
-							<h2 className="text-4xl md:text-5xl font-black text-white uppercase leading-tight tracking-tighter mb-10 text-left">
+							<h2 className="text-4xl md:text-5xl font-black uppercase leading-tight tracking-tighter mb-10 text-left">
 								{t('service.title')}
 								<br />
-								<span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-primary to-yellow-200">
+								<span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-primary to-gold-secondary">
 									{t('service.subtitle')}
 								</span>
 							</h2>
@@ -73,9 +73,6 @@ export default function Services() {
 										className="w-full h-auto object-contain p-2"
 									/>
 								</div>
-								<p className="mt-3 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-									Global Quality Standards Verified
-								</p>
 							</motion.div>
 						</motion.div>
 					</div>
@@ -90,7 +87,7 @@ export default function Services() {
 								viewport={{ once: true }}
 								transition={{ delay: idx * 0.1, duration: 0.6 }}
 								whileHover={{ y: -8 }}
-								className="group relative bg-slate-900/30 border border-white/5 p-8 rounded-[2.5rem] hover:bg-slate-900/60 hover:border-gold-primary/30 transition-all duration-500 overflow-hidden"
+								className="group relative bg-navy-primary border-4 border-gold-primary p-8 rounded-[2.5rem] hover:border-gold-primary transition-all duration-500 overflow-hidden"
 							>
 								<div className="absolute -top-2 -right-2 text-8xl font-black text-white/[0.02] group-hover:text-gold-primary/[0.04] transition-colors pointer-events-none italic">
 									{idx + 1}

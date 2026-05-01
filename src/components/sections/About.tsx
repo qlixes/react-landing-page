@@ -19,15 +19,18 @@ export default function About() {
     const description = t('about.brand.description', { returnObjects: true }) as String[];
 
     return (
-        <section id="about" className="bg-white mt-12">
+        <section id="about" className="bg-white mt-12 scroll-mt-32">
             <div className="container mx-auto px-4">
 
                 {/* PHASE 1: Narrative */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
                     <div className="lg:col-span-6">
-                        <span className="text-gold-primary font-bold tracking-[0.3em] uppercase text-xs mb-4 block">
-                            {t('about.badge')}
-                        </span>
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="w-16 h-[2px] bg-gold-primary" />
+                            <span className="text-gold-primary font-bold tracking-[0.4em] text-xs uppercase">
+                                {t('about.badge')}
+                            </span>
+                        </div>
                         {/* Baris 1: Fokus pada Expertise dengan Dekorasi */}
                         <h2 className="text-4xl md:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight">
                             {t('about.title_part1')}{" "}

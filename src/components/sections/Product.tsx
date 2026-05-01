@@ -16,14 +16,14 @@ export default function Product() {
     const selectedProduct = selectedIdx !== null ? productLists[selectedIdx] : null;
 
     return (
-        <section id="product" className="py-24 bg-white">
+        <section id="product" className="bg-white scroll-mt-32">
             <div className="container mx-auto px-4">
 
-                {/* Section Title */}
-                <div className="max-w-3xl mb-16">
-                    <h2 className="text-5xl font-bold text-slate-900 uppercase tracking-tighter mb-4">
+                <div className="flex items-center gap-4 mb-8">
+                    <div className="w-16 h-[2px] bg-gold-primary" />
+                    <span className="text-gold-primary font-bold tracking-[0.4em] text-xs uppercase">
                         {t('product.badge')}
-                    </h2>
+                    </span>
                 </div>
 
                 {/* Main Product Grid */}
