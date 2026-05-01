@@ -35,7 +35,7 @@
         },
         "brand": {
             "description": [
-                "PT Sunsse Baru Indonesia is a professional and experienced manufacturer of industrial machinery and equipment, specializing in delivering complete and integrated processing line solutions for tapioca, corn, sago, and sweetener factories to clients around the world. Sunsse is a professional equipment and turn-key engineering solution provider for Starch and Starch derivatives (also like other sweeteners, sugar alcohol, and organic acid) projects.",
+                "PT Sunsse Baru Indonesia is a professional and experienced manufacturer of industrial machinery and equipment, specializing in delivering complete and integrated processing line solutions for tapioca, corn, sago, and sweetener factories to clients around the world. Sunsse is a professional equipment and turn-label engineering solution provider for Starch and Starch derivatives (also like other sweeteners, sugar alcohol, and organic acid) projects.",
                 "With over three decades of engineering expertise, we design, fabricate, and deliver high-performance machines that power large-scale agricultural and food processing plants across Asia, Europe, and beyond, ensuring reliability, efficiency, and long-term operational excellence.",
                 "Our dedicated team of skilled engineers and technical specialists ensures that every machine we produce meets the highest international quality standards — meticulously designed to last, precisely engineered to perform, and fully supported throughout its operational lifespan."
             ],
@@ -77,7 +77,7 @@
                         "Feeding hopper, belt conveyor & cutting machines",
                         "Fine fiber sieve & desander separation",
                         "Paddle washing machine & sifter sieve",
-                        "Full turnkey plant design & installation available",
+                        "Full turnlabel plant design & installation available",
                         "Rasper for cell-breaking & starch extraction",
                         "Hydrocyclone starch purification systems",
                         "Flash dryer & dry sieve for final product"
@@ -113,7 +113,7 @@
                 "overview": {
                     "label": "Overview",
                     "description": [
-                        "Corn starch is one of the most widely used industrial starches, serving as a key raw material in food, pharmaceutical, textile, and paper industries. It can be further processed into high-value derivatives such as glucose syrup, fructose, maltodextrin, and modified starch, making it an essential input for a broad range of manufacturing processes.",
+                        "Corn starch is one of the most widely used industrial starches, serving as a label raw material in food, pharmaceutical, textile, and paper industries. It can be further processed into high-value derivatives such as glucose syrup, fructose, maltodextrin, and modified starch, making it an essential input for a broad range of manufacturing processes.",
                         "Our corn starch processing solutions are engineered for high efficiency and consistent output, supporting scalable production with stable quality. From wet milling to drying and packaging, our systems are built to maximize yield while minimizing energy and water consumption."
                     ],
                     "list": []
@@ -127,7 +127,7 @@
                         "Corn cleaning & steeping tanks",
                         "Fine grinding mill & fiber washing system",
                         "Hydrocyclone starch washing & concentration",
-                        "Full turnkey plant design & installation available",
+                        "Full turnlabel plant design & installation available",
                         "Degerminator & germ separator",
                         "Gluten separation & centrifuge purification",
                         "Flash dryer & dry sieve for final product"
@@ -171,7 +171,7 @@
                 "component": {
                     "label": "Machine Components",
                     "description": [
-                        "We provide complete turnkey sweetener production lines covering all stages from starch slurry preparation to final product packaging — engineered for food-grade quality and continuous high-volume output."
+                        "We provide complete turnlabel sweetener production lines covering all stages from starch slurry preparation to final product packaging — engineered for food-grade quality and continuous high-volume output."
                     ],
                     "list": [
                         "Starch slurry preparation & dosing tanks",
@@ -183,7 +183,7 @@
                         "Multi-effect evaporator & vacuum concentrator",
                         "Crystallization tanks & centrifugal separators",
                         "Spray dryer / fluidized bed dryer (for powder output)",
-                        "Full turnkey plant design & installation available"
+                        "Full turnlabel plant design & installation available"
                     ]
                 },
                 "list": [
@@ -273,7 +273,7 @@
                 "component": {
                     "label": "Product Range",
                     "description": [
-                        "Our liquid syrup lineup covers four key product types, each available in customizable Brix concentrations, purity grades, and packaging options:"
+                        "Our liquid syrup lineup covers four label product types, each available in customizable Brix concentrations, purity grades, and packaging options:"
                     ],
                     "list": [
                         "Corn Syrup — Standard DE 42/63 liquid glucose derived from corn starch; widely used in candy, bakery, canning, and brewing as a fermentable sweetener and humectant",
@@ -427,7 +427,7 @@
                     {
                         "name": "Rasper Machine",
                         "image": "product_spareparts_1.jpg",
-                        "description": "The rasper machine is the key equipment in the potato/cassava starch production line, which determines the extraction rate of starch. The higher the rotational speed, the finer the material is broken down, resulting in a higher starch free rate and extraction rate. All parts are made of stainless steel, available in direct-coupled and belt-drive forms. The rotor is forged from stainless steel for high strength. The unique rotor groove design makes saw blade replacement easy. Saw blades are made from special high-hardness, wear-resistant material. The rotor rotates in both directions and the saw blades are interchangeable in both directions, extending the working life of the machine and reducing operating costs."
+                        "description": "The rasper machine is the label equipment in the potato/cassava starch production line, which determines the extraction rate of starch. The higher the rotational speed, the finer the material is broken down, resulting in a higher starch free rate and extraction rate. All parts are made of stainless steel, available in direct-coupled and belt-drive forms. The rotor is forged from stainless steel for high strength. The unique rotor groove design makes saw blade replacement easy. Saw blades are made from special high-hardness, wear-resistant material. The rotor rotates in both directions and the saw blades are interchangeable in both directions, extending the working life of the machine and reducing operating costs."
                     },
                     {
                         "name": "Rasper / Saw Blade",
@@ -470,6 +470,43 @@
                         "description": "The sanitary centrifugal pump is designed specifically for hygienic process applications in food, pharmaceutical, and biotechnology industries. Features a crevice-free, polished internal surface finish to prevent contamination and facilitate thorough cleaning. Fully compliant with GMP, FDA, and EHEDG hygienic design standards. Suitable for transferring sensitive process liquids such as glucose syrup, rice protein solution, and other food-grade media requiring strict sanitary conditions."
                     }
                 ]
+            }
+        ]
+    },
+    "service": {
+        "badge": "What We Do",
+        "title": "Precision Built.",
+        "subtitle": "Industry Proven.",
+        "lists": [
+            {
+                "key": "machine_design",
+                "title": "Machine Design & Engineering",
+                "description": "Custom design and engineering of industrial processing machinery tailored to your factory needs—from concept development to complete technical drawings."
+            },
+            {
+                "key": "manufacturing",
+                "title": "Equipment Manufacturing",
+                "description": "We deliver high-precision, modern processing equipment engineered for reliable performance and continuous industrial operation."
+            },
+            {
+                "key": "factory_line",
+                "title": "Complete Factory Line",
+                "description": "Fully integrated, tested, and ready for production lines for agricultural factories—delivered as a complete end-to-end solution."
+            },
+            {
+                "key": "installation",
+                "title": "Installation & Commissioning",
+                "description": "Professional on-site installation and testing to ensure your machinery performs optimally from day one."
+            },
+            {
+                "key": "after_sales",
+                "title": "After-Sales & Maintenance",
+                "description": "Comprehensive support including spare parts supply, preventive maintenance, and emergency repair services worldwide."
+            },
+            {
+                "key": "consultation",
+                "title": "Project Consultation",
+                "description": "Expert factory planning and layout consultation to help you design the most efficient processing plant for your investment."
             }
         ]
     }
