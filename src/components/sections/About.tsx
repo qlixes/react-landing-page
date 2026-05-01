@@ -83,49 +83,38 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* New Section: Brand Trust (ISO & Slogan) */}
-                <div className="mt-20 mb-[-20px] relative z-10"> {/* Negative margin agar mendekat tapi z-index tetap di atas */}
-                    <div className="flex flex-row items-center justify-center md:justify-start gap-5 md:gap-8 px-4">
+                {/* Brand Trust Section: Overlay Positioning */}
+                <div className="relative z-20">
+                    <div className="flex flex-row items-center justify-center gap-4 md:gap-8 px-4">
 
-                        {/* Container: Logo & Slogan Grouping */}
-                        <div className="flex flex-row items-center gap-6 md:gap-10 w-full md:w-auto justify-center md:justify-start">
+                        {/* ISO & Slogan Flex Wrapper */}
+                        <div className="flex flex-row items-center gap-4 md:gap-8 relative z-30">
 
-                            {/* 1. ISO 9001 Logo - Non-Grayscale with Animation */}
+                            {/* 1. Floating ISO Logo - Forced Top Layer */}
                             <motion.div
-                                animate={{
-                                    y: [0, -6, 0],
-                                    rotateZ: [0, 0.5, -0.5, 0]
-                                }}
+                                animate={{ y: [0, -8, 0], rotateZ: [0, 0.5, -0.5, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                className="relative shrink-0 p-2"
+                                className="relative shrink-0"
                             >
+                                <div className="absolute inset-0 bg-white/50 blur-xl rounded-full" />
                                 <img
                                     src={iso9001}
                                     crossOrigin="anonymous"
                                     alt="ISO 9001"
-                                    className="w-16 h-auto md:w-28 relative z-20 drop-shadow-[0_10px_20px_rgba(0,0,0,0.1)]"
+                                    className="w-32 h-auto md:w-48 relative z-40 drop-shadow-[0_10px_25px_rgba(0,0,0,0.15)]"
                                 />
                             </motion.div>
 
-                            {/* 2. Brand Slogan - Vertical Divider & Text */}
-                            <div className="flex items-center self-center h-full gap-4 md:gap-8">
-                                <div className="h-10 md:h-14 w-px bg-gray-200 shadow-sm" />
-
-                                <motion.div
-                                    initial={{ opacity: 0, x: 10 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
-                                    className="flex flex-col"
-                                >
-                                    <p className="font-cormorant italic text-lg md:text-3xl text-gray-800 leading-none">
+                            {/* 2. Slogan with Consistent Alignment */}
+                            <div className="flex items-center gap-4 md:gap-8">
+                                <div className="h-10 md:h-16 w-px bg-gray-200" />
+                                <div className="flex flex-col">
+                                    <p className="font-cormorant font-bold italic text-lg md:text-4xl text-gray-800 leading-none">
                                         "{t('about.brand.slogan')}"
                                     </p>
-                                    <div className="mt-1 md:mt-3 h-[1px] w-6 md:w-12 bg-gold-primary/60" />
-                                </motion.div>
+                                </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
 
