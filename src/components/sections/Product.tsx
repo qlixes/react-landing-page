@@ -82,7 +82,6 @@ export default function Product() {
                                     <button
                                         onClick={() => setSelectedIdx(null)}
                                         className="mb-10 flex items-center gap-2 text-red-500 border-2 border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-colors uppercase font-black text-[12px] tracking-widest group"
-                                    // className="mb-10 flex items-center gap-2 text-slate-400 hover:text-red-500 transition-colors uppercase font-black text-[10px] tracking-widest group"
                                     >
                                         <X className="w-4 h-4 group-hover:rotate-90 transition-transform" /> Close
                                     </button>
@@ -108,7 +107,7 @@ export default function Product() {
                                                     <FileText className="w-6 h-6" />
                                                 </div>
                                                 <div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">Overview</h3>
+                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.overview.label}</h3>
                                                 </div>
                                             </div>
                                             <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-slate-50">
@@ -125,7 +124,7 @@ export default function Product() {
                                                     <Cog className="w-6 h-6" />
                                                 </div>
                                                 <div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">Machine Components</h3>
+                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.component.label}</h3>
                                                 </div>
                                             </div>
 
@@ -140,7 +139,7 @@ export default function Product() {
                                                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
                                                     {selectedProduct.component.list.map((item: string, i: number) => (
                                                         <li key={i} className="flex items-start gap-4 group/item">
-                                                            <div className="mt-1 flex items-center justify-center w-5 h-5 rounded-full bg-gold-primary/20 text-gold-primary group-hover/item:bg-gold-primary group-hover/item:text-slate-900 transition-colors">
+                                                            <div className="mt-1 flex items-center justify-center w-5 h-5 p-1 rounded-full bg-gold-primary/20 text-gold-primary group-hover/item:bg-gold-primary group-hover/item:text-slate-900 transition-colors">
                                                                 <ChevronRight className="w-3 h-3" />
                                                             </div>
                                                             <span className="font-bold text-sm text-slate-300 group-hover/item:text-white transition-colors">{item}</span>
@@ -167,7 +166,7 @@ export default function Product() {
                                                         key={i}
                                                         whileHover={{ scale: 1.02 }}
                                                         onClick={() => setActiveSubProduct(sub)}
-                                                        className="group relative aspect-video rounded-2xl overflow-hidden cursor-pointer bg-slate-100"
+                                                        className="group relative aspect-video rounded-2xl overflow-hidden cursor-pointer bg-slate-100 border-4 border-gold-primary"
                                                     >
                                                         <img
                                                             src={`/assets/products/${sub.image}`}
@@ -196,41 +195,61 @@ export default function Product() {
                 {/* Sub-Product Detail Modal */}
                 <AnimatePresence>
                     {activeSubProduct && (
-                        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-10">
+                        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-6">
+                            {/* Backdrop dengan blur */}
                             <motion.div
                                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
                                 onClick={() => setActiveSubProduct(null)}
                                 className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl"
                             />
+
+                            {/* Modal Container: Menghilangkan aspect-square agar fleksibel */}
                             <motion.div
-                                initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }}
-                                className="relative w-full max-w-5xl bg-white rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:flex-row"
+                                initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                                animate={{ scale: 1, opacity: 1, y: 0 }}
+                                exit={{ scale: 0.9, opacity: 0, y: 20 }}
+                                className="relative w-full max-w-3xl bg-white overflow-hidden shadow-2xl flex flex-col border-2 border-gold-primary"
                             >
+                                {/* Close Button */}
                                 <button
                                     onClick={() => setActiveSubProduct(null)}
-                                    className="absolute top-6 right-6 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-md p-3 rounded-full text-white transition-all"
+                                    className="absolute top-5 right-5 z-20 bg-slate-900/50 hover:bg-red-500 backdrop-blur-md p-2.5 rounded-full text-white transition-all duration-300 group"
                                 >
-                                    <X className="w-6 h-6" />
+                                    <X className="w-5 h-5 group-hover:rotate-90 transition-transform" />
                                 </button>
 
-                                <div className="w-full md:w-3/5 bg-slate-100 aspect-square md:aspect-auto">
+                                {/* 1. Image Area - Menggunakan object-contain agar gambar utuh (tidak terpotong/zoom) */}
+                                <div className="w-full bg-slate-100 flex items-center justify-center">
                                     <img
                                         src={`/assets/products/${activeSubProduct.image}`}
                                         alt={activeSubProduct.name}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-auto object-contain max-h-[70vh]"
                                     />
                                 </div>
 
-                                <div className="w-full md:w-2/5 p-10 md:p-16 flex flex-col justify-center">
-                                    <h4 className="text-gold-primary font-black uppercase text-[10px] tracking-[0.4em] mb-4">Product Detail</h4>
-                                    <h3 className="text-3xl font-black text-slate-900 uppercase mb-6 leading-tight">
-                                        {activeSubProduct.name}
-                                    </h3>
-                                    <div className="w-12 h-1 bg-gold-primary mb-8" />
-                                    <p className="text-slate-500 text-lg leading-relaxed italic">
-                                        {activeSubProduct.description || "Detailed documentation for this specific processing component in the industrial starch production line."}
-                                    </p>
-                                </div>
+                                {/* 2. Description Area - Conditional Rendering */}
+                                {activeSubProduct.description && activeSubProduct.description.trim() !== "" ? (
+                                    <div className="p-8 md:p-12 flex flex-col items-center text-center bg-white">
+                                        <div className="flex flex-col items-center mb-6">
+                                            <h4 className="text-gold-primary font-black uppercase text-[10px] tracking-[0.4em] mb-3">Product Detail</h4>
+                                            <h3 className="text-2xl md:text-3xl font-black text-slate-900 uppercase leading-tight">
+                                                {activeSubProduct.name}
+                                            </h3>
+                                            <div className="w-12 h-1 bg-gold-primary mt-4 rounded-full" />
+                                        </div>
+
+                                        <p className="text-slate-500 text-base md:text-lg leading-relaxed italic max-w-lg">
+                                            {activeSubProduct.description}
+                                        </p>
+                                    </div>
+                                ) : (
+                                    /* Fallback Footer: Muncul tepat di bawah gambar jika tidak ada deskripsi */
+                                    <div className="p-5 bg-slate-600 text-center w-full">
+                                        <h3 className="text-sm font-black text-white uppercase tracking-[0.3em]">
+                                            {activeSubProduct.name}
+                                        </h3>
+                                    </div>
+                                )}
                             </motion.div>
                         </div>
                     )}
