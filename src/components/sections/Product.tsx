@@ -1,26 +1,32 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight, Package, FileText, Cog, ChevronRight } from 'lucide-react';
+import { X, ArrowRight, Package, FileText, Cog, ChevronRight, Eye, Maximize2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function Product() {
     const { t } = useTranslation();
     const productLists = t('product.lists', { returnObjects: true }) as any[];
+
+    // State untuk Sidebar Utama
     const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
+
+    // State untuk Modal Detail Sub-Product
+    const [activeSubProduct, setActiveSubProduct] = useState<any | null>(null);
 
     const selectedProduct = selectedIdx !== null ? productLists[selectedIdx] : null;
 
     return (
-        <section id="products" className="py-24 bg-white">
+        <section id="product" className="py-24 bg-white">
             <div className="container mx-auto px-4">
 
+                {/* Section Title */}
                 <div className="max-w-3xl mb-16">
                     <h2 className="text-5xl font-bold text-slate-900 uppercase tracking-tighter mb-4">
-                        Our Products
+                        {t('product.badge')}
                     </h2>
-                    <div className="w-20 h-1.5 bg-gold-primary" />
                 </div>
 
+                {/* Main Product Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {productLists.map((product, idx) => (
                         <motion.div
@@ -42,9 +48,11 @@ export default function Product() {
                                 <h3 className="text-3xl font-bold text-white uppercase mb-4 leading-[1.1] group-hover:text-gold-primary transition-colors">
                                     {product.label}
                                 </h3>
-                                <p className="text-slate-300 text-sm italic font-medium leading-relaxed opacity-90 line-clamp-3">
-                                    {product.slogan}
-                                </p>
+                                {product.slogan && (
+                                    <p className="text-slate-300 text-sm italic font-medium leading-relaxed opacity-90 line-clamp-3">
+                                        {product.slogan}
+                                    </p>
+                                )}
                             </div>
 
                             <div className="relative z-10 px-10 py-7 bg-slate-950 flex items-center justify-between group-hover:bg-gold-primary transition-all duration-300">
@@ -57,6 +65,7 @@ export default function Product() {
                     ))}
                 </div>
 
+                {/* Detail Sidebar Overlay */}
                 <AnimatePresence>
                     {selectedIdx !== null && selectedProduct && (
                         <>
@@ -68,94 +77,183 @@ export default function Product() {
                             <motion.div
                                 initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }}
                                 transition={{ type: 'spring', damping: 30, stiffness: 200 }}
-                                className="fixed right-0 top-0 h-full w-full lg:w-[50%] bg-white z-[101] shadow-2xl overflow-y-auto"
+                                className="fixed right-0 top-0 h-full w-full lg:w-[55%] bg-white z-[101] shadow-2xl overflow-y-auto"
                             >
                                 <div className="p-8 lg:p-16">
+                                    {/* Close Button */}
                                     <button
                                         onClick={() => setSelectedIdx(null)}
-                                        className="mb-10 flex items-center gap-2 text-slate-400 hover:text-red-500 transition-colors uppercase font-black text-[10px] tracking-widest group"
+                                        className="mb-10 flex items-center gap-2 text-red-500 border-2 border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-colors uppercase font-black text-[12px] tracking-widest group"
                                     >
-                                        <X className="w-4 h-4 group-hover:rotate-90 transition-transform" /> Close Details
+                                        <X className="w-4 h-4 group-hover:rotate-90 transition-transform" /> Close
                                     </button>
 
+                                    {/* Sidebar Header */}
                                     <div className="mb-16">
                                         <h2 className="text-5xl font-black text-slate-900 uppercase leading-[0.9] mb-8 tracking-tighter">
                                             {selectedProduct.label}
                                         </h2>
-                                        <div className="flex items-center gap-5">
-                                            <div className="w-1.5 self-stretch min-h-[40px] bg-gold-primary rounded-full shadow-[0_0_15px_rgba(212,175,55,0.3)]" />
-
-                                            <p className="text-xl text-slate-500 italic font-medium leading-relaxed">
-                                                {selectedProduct.slogan}
-                                            </p>
-                                        </div>
+                                        {selectedProduct.slogan && (
+                                            <div className="flex items-center gap-5">
+                                                <div className="w-1.5 self-stretch min-h-[40px] bg-gold-primary rounded-full" />
+                                                <p className="text-xl text-slate-500 italic font-medium leading-relaxed">
+                                                    {selectedProduct.slogan}
+                                                </p>
+                                            </div>
+                                        )}
                                     </div>
 
                                     <div className="flex flex-col gap-20">
-
-                                        {/* SECTION: OVERVIEW */}
-                                        <div className="relative">
-                                            <div className="flex items-center gap-4 mb-8">
-                                                <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
-                                                    <FileText className="w-6 h-6" />
+                                        {/* SECTION 01: OVERVIEW - Dihapus jika label kosong */}
+                                        {selectedProduct.overview?.label && selectedProduct.overview.label.trim() !== "" && (
+                                            <div>
+                                                <div className="flex items-center gap-4 mb-8">
+                                                    <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
+                                                        <FileText className="w-6 h-6" />
+                                                    </div>
+                                                    <div>
+                                                        <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.overview.label}</h3>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase tracking-tight">Overview</h3>
-                                                </div>
-                                            </div>
-                                            <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-slate-50">
-                                                {selectedProduct.overview.description.map((p: string, i: number) => (
-                                                    <p key={i}>{p}</p>
-                                                ))}
-                                            </div>
-                                        </div>
-
-                                        {/* SECTION: MACHINE COMPONENTS */}
-                                        <div className="relative">
-                                            <div className="flex items-center gap-4 mb-8">
-                                                <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
-                                                    <Cog className="w-6 h-6" />
-                                                </div>
-                                                <div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase tracking-tight">Machine Components</h3>
+                                                <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-slate-50">
+                                                    {selectedProduct.overview.description?.map((p: string, i: number) => (
+                                                        <p key={i}>{p}</p>
+                                                    ))}
                                                 </div>
                                             </div>
+                                        )}
 
-                                            <div className="text-slate-600 text-lg leading-relaxed mb-10 pl-4 border-l-2 border-slate-50">
-                                                {selectedProduct.component.description.map((p: string, i: number) => (
-                                                    <p key={i}>{p}</p>
-                                                ))}
-                                            </div>
-
-                                            {/* Technical Spec Box yang dipertegas */}
-                                            <div className="bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl relative overflow-hidden group">
-                                                {/* Background Decorative Element */}
-                                                <div className="absolute top-0 right-0 w-32 h-32 bg-gold-primary/10 rounded-full -mr-16 -mt-16 blur-3xl" />
-
-                                                <div className="flex items-center gap-4 mb-10 relative z-10">
-                                                    <div className="w-10 h-10 rounded-xl bg-gold-primary flex items-center justify-center">
-                                                        <Package className="w-5 h-5 text-slate-900" />
+                                        {/* SECTION 02: COMPONENTS - Dihapus jika label kosong */}
+                                        {selectedProduct.component?.label && selectedProduct.component.label.trim() !== "" && (
+                                            <div>
+                                                <div className="flex items-center gap-4 mb-8">
+                                                    <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
+                                                        <Cog className="w-6 h-6" />
+                                                    </div>
+                                                    <div>
+                                                        <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.component.label}</h3>
                                                     </div>
                                                 </div>
 
-                                                <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 relative z-10">
-                                                    {selectedProduct.component.list.map((item: string, i: number) => (
-                                                        <li key={i} className="flex items-start gap-4 group/item">
-                                                            <div className="mt-1 flex items-center justify-center w-5 h-5 rounded-full bg-gold-primary/20 text-gold-primary group-hover/item:bg-gold-primary group-hover/item:text-slate-900 transition-colors">
-                                                                <ChevronRight className="w-3 h-3" />
-                                                            </div>
-                                                            <span className="font-bold text-sm text-slate-300 group-hover/item:text-white transition-colors">
-                                                                {item}
-                                                            </span>
-                                                        </li>
+                                                <div className="text-slate-600 text-lg leading-relaxed mb-10 pl-4 border-l-2 border-slate-50">
+                                                    {selectedProduct.component.description?.map((p: string, i: number) => (
+                                                        <p key={i}>{p}</p>
                                                     ))}
-                                                </ul>
+                                                </div>
+
+                                                {/* Technical Spec Box */}
+                                                <div className="bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl overflow-hidden relative">
+                                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                                                        {selectedProduct.component.list?.map((item: string, i: number) => (
+                                                            <li key={i} className="flex items-start gap-4 group/item">
+                                                                <div className="mt-1 flex items-center justify-center w-5 h-5 p-1 rounded-full bg-gold-primary/20 text-gold-primary group-hover/item:bg-gold-primary group-hover/item:text-slate-900 transition-colors">
+                                                                    <ChevronRight className="w-3 h-3" />
+                                                                </div>
+                                                                <span className="font-bold text-sm text-slate-300 group-hover/item:text-white transition-colors">{item}</span>
+                                                            </li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {/* SECTION 03: SUB-PRODUCTS (NEW) */}
+                                        <div className="pb-20">
+                                            <div className="flex items-center gap-4 mb-8">
+                                                <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
+                                                    <Eye className="w-6 h-6" />
+                                                </div>
+                                                <div>
+                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">Product Gallery</h3>
+                                                </div>
+                                            </div>
+
+                                            <div className="grid grid-cols-2 gap-4">
+                                                {selectedProduct.list?.map((sub: any, i: number) => (
+                                                    <motion.div
+                                                        key={i}
+                                                        whileHover={{ scale: 1.02 }}
+                                                        onClick={() => setActiveSubProduct(sub)}
+                                                        className="group relative aspect-video rounded-2xl overflow-hidden cursor-pointer bg-slate-100 border-4 border-gold-primary"
+                                                    >
+                                                        <img
+                                                            src={`/assets/products/${sub.image}`}
+                                                            alt={sub.name}
+                                                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                                        />
+                                                        <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                                            <div className="bg-white/20 backdrop-blur-md p-3 rounded-full border border-white/30 text-white">
+                                                                <Maximize2 className="w-5 h-5" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-900/80 to-transparent">
+                                                            <p className="text-white font-bold text-xs uppercase tracking-wider">{sub.name}</p>
+                                                        </div>
+                                                    </motion.div>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </motion.div>
                         </>
+                    )}
+                </AnimatePresence>
+
+                {/* Sub-Product Detail Modal */}
+                <AnimatePresence>
+                    {activeSubProduct && (
+                        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-6">
+                            <motion.div
+                                initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                                onClick={() => setActiveSubProduct(null)}
+                                className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl"
+                            />
+
+                            <motion.div
+                                initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                                animate={{ scale: 1, opacity: 1, y: 0 }}
+                                exit={{ scale: 0.9, opacity: 0, y: 20 }}
+                                className="relative w-full max-w-3xl bg-white overflow-hidden shadow-2xl flex flex-col border-2 border-gold-primary"
+                            >
+                                <button
+                                    onClick={() => setActiveSubProduct(null)}
+                                    className="absolute top-5 right-5 z-20 bg-slate-900/50 hover:bg-red-500 backdrop-blur-md p-2.5 rounded-full text-white transition-all duration-300 group"
+                                >
+                                    <X className="w-5 h-5 group-hover:rotate-90 transition-transform" />
+                                </button>
+
+                                <div className="w-full bg-slate-100 flex items-center justify-center">
+                                    <img
+                                        src={`/assets/products/${activeSubProduct.image}`}
+                                        alt={activeSubProduct.name}
+                                        className="w-full h-auto object-contain max-h-[70vh]"
+                                    />
+                                </div>
+
+                                {activeSubProduct.description && activeSubProduct.description.trim() !== "" ? (
+                                    <div className="p-8 md:p-12 flex flex-col items-center text-center bg-white">
+                                        <div className="flex flex-col items-center mb-6">
+                                            <h4 className="text-gold-primary font-black uppercase text-[10px] tracking-[0.4em] mb-3">Product Detail</h4>
+                                            <h3 className="text-2xl md:text-3xl font-black text-slate-900 uppercase leading-tight">
+                                                {activeSubProduct.name}
+                                            </h3>
+                                            <div className="w-12 h-1 bg-gold-primary mt-4 rounded-full" />
+                                        </div>
+
+                                        <p className="text-slate-500 text-base md:text-lg leading-relaxed italic max-w-lg">
+                                            {activeSubProduct.description}
+                                        </p>
+                                    </div>
+                                ) : (
+                                    <div className="p-5 bg-slate-600 text-center w-full">
+                                        <h3 className="text-sm font-black text-white uppercase tracking-[0.3em]">
+                                            {activeSubProduct.name}
+                                        </h3>
+                                    </div>
+                                )}
+                            </motion.div>
+                        </div>
                     )}
                 </AnimatePresence>
             </div>
