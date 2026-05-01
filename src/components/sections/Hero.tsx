@@ -5,7 +5,7 @@ export default function Hero() {
 	const { t } = useTranslation();
 
 	return (
-		<section id="home" className="relative w-full h-screen pt-16 overflow-hidden bg-gray-900">
+		<section id="home" className="relative w-full h-screen mt-20 overflow-hidden bg-gray-900">
 
 			{/* 1. Background Image */}
 			<div className="absolute inset-0 z-0">
@@ -23,14 +23,14 @@ export default function Hero() {
 				</h1>
 
 				{/* Subtitle */}
-				<div className="max-w-2xl text-white/90 text-base md:text-lg leading-relaxed text-center space-y-4 mb-10 font-light">
+				<div className="max-w-2xl text-white text-xl md:text-lg leading-relaxed text-center space-y-4 mb-10 font-bold">
 					<p>{t('hero.subtitle')}</p>
 					<p>{t('hero.description')}</p>
 				</div>
 
 				{/* CTA Buttons */}
 				<div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-					<a href="#service" className="px-7 py-4 text-xs font-bold border border-transparent uppercase transition-all duration-300 bg-[var(--color-gold-secondary)] text-black hover:brightness-110 hover:shadow-lg hover:shadow-[var(--color-primary)]/40 active:scale-95">{t('hero.cta.service')}</a>
+					<a href="#service" className="px-7 py-4 text-xs font-bold border border-transparent uppercase transition-all duration-300 bg-gold-secondary text-black hover:brightness-110 hover:shadow-lg hover:shadow-[var(--color-primary)]/40 active:scale-95">{t('hero.cta.service')}</a>
 					<a href="#contact" className="px-7 py-4 text-xs font-bold uppercase transition-all duration-300 border border-white/40 bg-white/5 backdrop-blur-sm text-white hover:bg-white hover:text-black hover:border-white active:scale-95">{t('hero.cta.contact')}</a>
 				</div>
 			</div>

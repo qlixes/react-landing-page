@@ -16,16 +16,15 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="fixed top-0 w-full bg-white border-b border-gray-100 z-50">
-                <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+            <nav className="fixed top-0 w-full bg-white border-b border-gray-400 z-50">
+                <div className="container mx-auto px-4 h-20 flex items-center justify-between">
 
                     <a href="#home" className="flex items-center gap-3 h-14">
                         <img src={logo} alt="logo" className="h-full w-auto object-contain" />
 
                         <span className="font-cormorant font-bold tracking-wider leading-none flex items-baseline">
-                            {/* SUNSSE BARU menggunakan ukuran standar (misal text-xl) */}
                             <span className="text-xl">
-                                SUNSSE <span className="text-[var(--color-gold-primary)] ml-1">BARU</span>
+                                SUNSSE <span className="text-gold-primmary ml-1">BARU</span>
                             </span>
 
                             {/* INDONESIA dibuat lebih kecil dan diberi jarak kiri */}
@@ -37,12 +36,12 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center gap-8">
-                        <a href="#home" className="hover:text-[var(--color-gold-primary)] hover:border-[var(--color-gold-secondary))] hover:border-b transition">{t('nav.home')}</a>
-                        <a href="#about" className="hover:text-[var(--color-gold-primary)] hover:border-[var(--color-gold-secondary))] hover:border-b transition">{t('nav.about')}</a>
-                        <a href="#product" className="hover:text-[var(--color-gold-primary)] hover:border-[var(--color-gold-secondary))] hover:border-b transition">{t('nav.product')}</a>
-                        <a href="#service" className="hover:text-[var(--color-gold-primary)] hover:border-[var(--color-gold-secondary))] hover:border-b transition">{t('nav.service')}</a>
-                        <a href="#market" className="hover:text-[var(--color-gold-primary)] hover:border-[var(--color-gold-secondary))] hover:border-b transition">{t('nav.market')}</a>
-                        <a href="#contact" className="hover:text-[var(--color-gold-primary)] hover:border-[var(--color-gold-secondary))] hover:border-b transition">{t('nav.contact')}</a>
+                        <a href="#home" className="hover:text-gold-primary hover:border-gold-secondary hover:border-b transition">{t('nav.home')}</a>
+                        <a href="#about" className="hover:text-gold-primary hover:border-gold-secondary hover:border-b transition">{t('nav.about')}</a>
+                        <a href="#product" className="hover:text-gold-primary hover:border-gold-secondary hover:border-b transition">{t('nav.product')}</a>
+                        <a href="#service" className="hover:text-gold-primary hover:border-gold-secondary hover:border-b transition">{t('nav.service')}</a>
+                        <a href="#market" className="hover:text-gold-primary hover:border-gold-secondary hover:border-b transition">{t('nav.market')}</a>
+                        <a href="#contact" className="hover:text-gold-primary hover:border-gold-secondary hover:border-b transition">{t('nav.contact')}</a>
                     </div>
 
                     <div className="relative hidden md:block">
