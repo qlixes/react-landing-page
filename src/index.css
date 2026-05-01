@@ -6,6 +6,8 @@
 
 	--color-gold-primary: #c9a84c;
 	--color-gold-secondary: #e8c96a;
+	--color-navy-primary: #0a0f2e;
+	--color-navy-secondary: #0d1540;
 }
 
 @layer base {

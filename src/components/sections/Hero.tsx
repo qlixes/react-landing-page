@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import heroBg from '@/assets/hero.jpg';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
 	const { t } = useTranslation();
@@ -9,12 +11,12 @@ export default function Hero() {
 
 			{/* 1. Background Image */}
 			<div className="absolute inset-0 z-0">
-				<img src={heroBg} alt="Industrial Facility Sunsse" className="w-full h-full object-cover" loading="eager" fetchPriority="high" />
+				<img src={heroBg} alt="Industrial Facility Sunsse" draggable="false" className="w-full h-full object-cover pointer-events-none select-none" loading="eager" fetchPriority="high" />
 			</div>
 
 			<div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_top_right,_var(--color-brand-gold)/25%,_transparent_60%)] mix-blend-soft-light" />
 
-			<div className="absolute inset-0 z-10 bg-black/40 backdrop-blur-[1px]" />
+			<div className="absolute inset-0 z-10 bg-transparent backdrop-blur-[1px] pointer-events-none" />
 
 			{/* 4. Content (Tetap sama seperti sebelumnya) */}
 			<div className="container mx-auto px-4 h-full relative z-20 flex flex-col items-center justify-center text-center text-white text-bold">
@@ -29,10 +31,54 @@ export default function Hero() {
 				</div>
 
 				{/* CTA Buttons */}
-				<div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-					<a href="#service" className="px-7 py-4 text-xs font-bold border border-transparent uppercase transition-all duration-300 bg-gold-secondary text-black hover:brightness-110 hover:shadow-lg hover:shadow-[var(--color-primary)]/40 active:scale-95">{t('hero.cta.service')}</a>
-					<a href="#contact" className="px-7 py-4 text-xs font-bold uppercase transition-all duration-300 border border-white/40 bg-white/5 backdrop-blur-sm text-white hover:bg-white hover:text-black hover:border-white active:scale-95">{t('hero.cta.contact')}</a>
-				</div>
+				<motion.div
+					initial={{ opacity: 0, y: 20 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8, delay: 0.5 }}
+					viewport={{ once: true }}
+					className="flex flex-col sm:flex-row items-center justify-center gap-5"
+				>
+					{/* Button 1: Primary CTA */}
+					<motion.a
+						href="#service"
+						whileHover={{
+							scale: 1.05,
+							boxShadow: "0px 10px 30px rgba(212, 175, 55, 0.4)"
+						}}
+						whileTap={{ scale: 0.95 }}
+						className="px-8 py-4 text-[10px] tracking-[0.2em] font-black border border-transparent uppercase transition-all duration-300 bg-gold-secondary text-black flex items-center gap-2 group"
+					>
+						{t('hero.cta.service')}
+						<motion.span
+							initial={{ x: 0 }}
+							whileHover={{ x: 5 }}
+							transition={{ type: "spring", stiffness: 400 }}
+						>
+							<ArrowRight className="w-3 h-3" />
+						</motion.span>
+					</motion.a>
+
+					{/* Button 2: Secondary CTA (Outline Style agar lebih variatif) */}
+					<motion.a
+						href="#service"
+						whileHover={{
+							scale: 1.05,
+							boxShadow: "0px 10px 30px rgba(212, 175, 55, 0.4)"
+						}}
+						whileTap={{ scale: 0.95 }}
+						className="px-8 py-4 text-[10px] tracking-[0.2em] font-black border border-transparent uppercase transition-all duration-300 bg-gold-secondary text-black flex items-center gap-2 group"
+					>
+						{t('hero.cta.contact')}
+						<motion.span
+							initial={{ x: 0 }}
+							whileHover={{ x: 5 }}
+							transition={{ type: "spring", stiffness: 400 }}
+						>
+							<ArrowRight className="w-3 h-3" />
+						</motion.span>
+					</motion.a>
+	
+				</motion.div>
 			</div>
 		</section >
 	);
