@@ -16,7 +16,7 @@ export default function Product() {
 
                 <div className="max-w-3xl mb-16">
                     <h2 className="text-5xl font-bold text-slate-900 uppercase tracking-tighter mb-4">
-                        Featured Solutions
+                        Our Products
                     </h2>
                     <div className="w-20 h-1.5 bg-gold-primary" />
                 </div>

@@ -84,19 +84,23 @@
                 "list": [
                     {
                         "name": "Cassava & Tapioca Starch",
-                        "image": "product_cassava_tapioka_1.jpg"
+                        "image": "product_cassava_tapioka_1.jpg",
+                        "description": ""
                     },
                     {
                         "name": "Complete Production Line",
-                        "image": "product_cassava_tapioka_2.jpg"
+                        "image": "product_cassava_tapioka_2.jpg",
+                        "description": ""
                     },
                     {
                         "name": "3D Factory Layout",
-                        "image": "product_cassava_tapioka_3.jpg"
+                        "image": "product_cassava_tapioka_3.jpg",
+                        "description": ""
                     },
                     {
                         "name": "Production Process Steps",
-                        "image": "product_cassava_tapioka_4.jpg"
+                        "image": "product_cassava_tapioka_4.jpg",
+                        "description": ""
                     }
                 ]
             },
@@ -128,19 +132,23 @@
                 "list": [
                     {
                         "name": "Cornstarch",
-                        "image": "product_corn_1.jpeg"
+                        "image": "product_corn_1.jpeg",
+                        "description": ""
                     },
                     {
                         "name": "Dried Corn Kernels",
-                        "image": "product_corn_2.jpeg"
+                        "image": "product_corn_2.jpeg",
+                        "description": ""
                     },
                     {
                         "name": "Complete Corn Wet Milling Line",
-                        "image": "product_corn_3.jpeg"
+                        "image": "product_corn_3.jpeg",
+                        "description": ""
                     },
                     {
                         "name": "Cornstarch Processing Machine",
-                        "image": "product_corn_4.jpeg"
+                        "image": "product_corn_4.jpeg",
+                        "description": ""
                     }
                 ]
             }
