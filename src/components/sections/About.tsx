@@ -19,7 +19,7 @@ export default function About() {
     const description = t('about.brand.description', { returnObjects: true }) as String[];
 
     return (
-        <section id="about" className="py-24 bg-white">
+        <section id="about" className="bg-white">
             <div className="container mx-auto px-4">
 
                 {/* PHASE 1: Narrative */}
