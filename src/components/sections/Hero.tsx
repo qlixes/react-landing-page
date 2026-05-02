@@ -60,7 +60,7 @@ export default function Hero() {
 
 					{/* Button 2: Secondary CTA (Outline Style agar lebih variatif) */}
 					<motion.a
-						href="#service"
+						href="#contact"
 						whileHover={{
 							scale: 1.05,
 							boxShadow: "0px 10px 30px rgba(212, 175, 55, 0.4)"
@@ -77,7 +77,7 @@ export default function Hero() {
 							<ArrowRight className="w-3 h-3" />
 						</motion.span>
 					</motion.a>
-	
+
 				</motion.div>
 			</div>
 		</section >

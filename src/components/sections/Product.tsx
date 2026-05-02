@@ -16,14 +16,14 @@ export default function Product() {
     const selectedProduct = selectedIdx !== null ? productLists[selectedIdx] : null;
 
     return (
-        <section id="product" className="py-24 bg-white">
+        <section id="product" className="bg-white scroll-mt-32">
             <div className="container mx-auto px-4">
 
-                {/* Section Title */}
-                <div className="max-w-3xl mb-16">
-                    <h2 className="text-5xl font-bold text-slate-900 uppercase tracking-tighter mb-4">
+                <div className="flex items-center gap-4 mb-8">
+                    <div className="w-16 h-[2px] bg-gold-primary" />
+                    <span className="text-gold-primary font-bold tracking-[0.4em] text-xs uppercase">
                         {t('product.badge')}
-                    </h2>
+                    </span>
                 </div>
 
                 {/* Main Product Grid */}
@@ -234,14 +234,13 @@ export default function Product() {
                                 {activeSubProduct.description && activeSubProduct.description.trim() !== "" ? (
                                     <div className="p-8 md:p-12 flex flex-col items-center text-center bg-white">
                                         <div className="flex flex-col items-center mb-6">
-                                            <h4 className="text-gold-primary font-black uppercase text-[10px] tracking-[0.4em] mb-3">Product Detail</h4>
                                             <h3 className="text-2xl md:text-3xl font-black text-slate-900 uppercase leading-tight">
                                                 {activeSubProduct.name}
                                             </h3>
                                             <div className="w-12 h-1 bg-gold-primary mt-4 rounded-full" />
                                         </div>
 
-                                        <p className="text-slate-500 text-base md:text-lg leading-relaxed italic max-w-lg">
+                                        <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-lg">
                                             {activeSubProduct.description}
                                         </p>
                                     </div>
