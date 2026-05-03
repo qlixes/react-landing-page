@@ -3,10 +3,6 @@ import { motion } from 'framer-motion';
 import { useTranslation, Trans } from 'react-i18next';
 import { MapPin, Handshake, Mail, Clock, Send, Loader2 } from 'lucide-react';
 import {
-	IconBrandTiktok,
-	IconBrandInstagram,
-	IconBrandFacebook,
-	IconBrandLinkedin,
 	IconBrandWhatsapp
 } from '@tabler/icons-react';
 
