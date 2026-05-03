@@ -1,18 +1,8 @@
-import logo from '@/assets/logo.png';
 import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
-
-  const sitemap = [
-    { label: t('nav.home'), href: '#home' },
-    { label: t('nav.about'), href: '#about' },
-    { label: t('nav.product'), href: '#product' },
-    { label: t('nav.service'), href: '#service' },
-    { label: t('nav.market'), href: '#market' },
-    { label: t('nav.contact'), href: '#contact' },
-  ];
 
   return (
     <footer className="bg-navy-gradient border-t border-gold-primary/20 text-white">
