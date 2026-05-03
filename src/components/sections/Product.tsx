@@ -25,6 +25,14 @@ export default function Product() {
     const closeSidebar = () => setSelectedIdx(null);
     const closeModal = () => setActiveSubProduct(null);
 
+    // Helper cek string tidak kosong
+    const hasContent = (value: string | undefined) =>
+        typeof value === 'string' && value.trim() !== '';
+
+    // Helper filter list dari string kosong
+    const filterList = (list: string[] | undefined) =>
+        (list ?? []).filter(item => hasContent(item));
+
     return (
         <section id="product" className="bg-white scroll-mt-32">
             <div className="container mx-auto px-4">
@@ -110,29 +118,32 @@ export default function Product() {
                                     </div>
 
                                     <div className="flex flex-col gap-20">
-                                        {selectedProduct.overview?.label && selectedProduct.overview.label.trim() !== "" && (
+                                        {hasContent(selectedProduct.overview?.label) && (
                                             <div>
                                                 <div className="flex items-center gap-4 mb-8">
                                                     <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
                                                         <FileText className="w-6 h-6" />
                                                     </div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.overview.label}</h3>
+                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">
+                                                        {selectedProduct.overview.label}
+                                                    </h3>
                                                 </div>
                                                 <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-gold-primary/30">
-                                                    {selectedProduct.overview.description?.map((desc: string, i: number) => (
-                                                        <p key={i}>{desc}</p>
-                                                    ))}
+                                                    {selectedProduct.overview.description
+                                                        ?.filter((desc: string) => hasContent(desc))
+                                                        .map((desc: string, i: number) => (
+                                                            <p key={i}>{desc}</p>
+                                                        ))}
                                                 </div>
                                             </div>
                                         )}
 
-                                        {selectedProduct.component?.list?.length > 0 && (
+                                        {hasContent(selectedProduct.component?.label) && filterList(selectedProduct.component?.list).length > 0 && (
                                             <div>
                                                 <div className="flex items-center gap-4 mb-8">
                                                     <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
                                                         <Cog className="w-6 h-6" />
                                                     </div>
-                                                    {/* Perbaikan: Ganti 'selected.component.label' menjadi 'product.selected.component.label' (atau sesuai JSON Anda) */}
                                                     <h3 className="text-2xl font-bold text-slate-900 uppercase">
                                                         {selectedProduct.component.label}
                                                     </h3>
@@ -147,7 +158,7 @@ export default function Product() {
 
                                                 <div className="bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl overflow-hidden relative">
                                                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-                                                        {selectedProduct.component.list?.map((item: string, i: number) => (
+                                                        {filterList(selectedProduct.component.list).map((item: string, i: number) => (
                                                             <li key={i} className="flex items-start gap-4 group/item">
                                                                 <div className="mt-1 flex items-center justify-center w-5 h-5 p-1 rounded-full bg-gold-primary/20 text-gold-primary group-hover/item:bg-gold-primary group-hover/item:text-slate-900 transition-colors">
                                                                     <ChevronRight className="w-3 h-3" />
