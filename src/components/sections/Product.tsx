@@ -12,7 +12,6 @@ export default function Product() {
 
     const selectedProduct = selectedIdx !== null ? productLists[selectedIdx] : null;
 
-    // ✅ Lock scroll ketika sidebar atau modal terbuka
     useEffect(() => {
         const isOpen = selectedIdx !== null || activeSubProduct !== null;
         document.body.style.overflow = isOpen ? 'hidden' : '';
@@ -119,7 +118,7 @@ export default function Product() {
                                                     </div>
                                                     <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.overview.label}</h3>
                                                 </div>
-                                                <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-slate-50">
+                                                <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-gold-primary/30">
                                                     {selectedProduct.overview.description?.map((desc: string, i: number) => (
                                                         <p key={i}>{desc}</p>
                                                     ))}
@@ -133,8 +132,19 @@ export default function Product() {
                                                     <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
                                                         <Cog className="w-6 h-6" />
                                                     </div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">Components</h3>
+                                                    {/* Perbaikan: Ganti 'selected.component.label' menjadi 'product.selected.component.label' (atau sesuai JSON Anda) */}
+                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">
+                                                        {selectedProduct.component.label}
+                                                    </h3>
                                                 </div>
+
+                                                {/* Tambahkan Deskripsi Komponen di sini */}
+                                                {selectedProduct.component.description && (
+                                                    <p className="text-slate-600 text-lg leading-relaxed mb-8 pl-4 border-l-2 border-gold-primary/30">
+                                                        {selectedProduct.component.description}
+                                                    </p>
+                                                )}
+
                                                 <div className="bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl overflow-hidden relative">
                                                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
                                                         {selectedProduct.component.list?.map((item: string, i: number) => (
@@ -142,7 +152,9 @@ export default function Product() {
                                                                 <div className="mt-1 flex items-center justify-center w-5 h-5 p-1 rounded-full bg-gold-primary/20 text-gold-primary group-hover/item:bg-gold-primary group-hover/item:text-slate-900 transition-colors">
                                                                     <ChevronRight className="w-3 h-3" />
                                                                 </div>
-                                                                <span className="font-bold text-sm text-slate-300 group-hover/item:text-white transition-colors">{item}</span>
+                                                                <span className="font-bold text-sm text-slate-300 group-hover/item:text-white transition-colors">
+                                                                    {item}
+                                                                </span>
                                                             </li>
                                                         ))}
                                                     </ul>
