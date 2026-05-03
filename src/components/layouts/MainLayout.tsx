@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '@/components/common/Navbar';
+import Footer from '@/components/common/Footer';
 
 interface MainLayoutProps {
     children: React.ReactNode;
@@ -15,9 +16,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
             </main>
 
             {/* Anda bisa menambahkan Footer di sini nanti */}
-            <footer className="bg-gray-50 py-8 border-t border-gray-100">
-
-            </footer>
+            <Footer />
         </div>
     );
 }

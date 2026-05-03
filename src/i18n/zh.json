@@ -15,5 +15,593 @@
             "service": "我们的服务",
             "contact": "联系我们"
         }
+    },
+    "about": {
+        "badge": "WHO WE ARE",
+        "mission": {
+            "label": "mission",
+            "description": [
+                "To supply high-quality and innovative industrial machinery and equipment.",
+                "To enhance customer productivity through efficient and sustainable technical solutions.",
+                "To provide responsive and professional after-sales service.",
+                "To build long-term partnerships based on trust and integrity."
+            ]
+        },
+        "vision": {
+            "label": "vision",
+            "description": [
+                "To become a leading company — professional and experienced manufacturer of industrial machinery and equipment, specializing in delivering complete and integrated processing line solutions for tapioca, corn, sago, and sweetener factories to clients in Indonesia and around the world with international standards, focusing on quality, efficiency and customer satisfaction."
+            ]
+        },
+        "brand": {
+            "description": [
+                "PT Sunsse Baru Indonesia is a professional and experienced manufacturer of industrial machinery and equipment, specializing in delivering complete and integrated processing line solutions for tapioca, corn, sago, and sweetener factories to clients around the world. Sunsse is a professional equipment and turn-label engineering solution provider for Starch and Starch derivatives (also like other sweeteners, sugar alcohol, and organic acid) projects.",
+                "With over three decades of engineering expertise, we design, fabricate, and deliver high-performance machines that power large-scale agricultural and food processing plants across Asia, Europe, and beyond, ensuring reliability, efficiency, and long-term operational excellence.",
+                "Our dedicated team of skilled engineers and technical specialists ensures that every machine we produce meets the highest international quality standards — meticulously designed to last, precisely engineered to perform, and fully supported throughout its operational lifespan."
+            ],
+            "slogan": "Engineered for the World"
+        },
+        "title_part1": "Built with",
+        "title_mark_part1": "Expertise",
+        "title_part2": "Trusted by",
+        "title_mark_part2": "Customers",
+        "stats": {
+            "countries": "Countries Served",
+            "machines": "Machines Installed (Domestic & International)",
+            "experience": "Years Experience",
+            "satisfaction": "Client Satisfaction"
+        },
+        "learn_more": "Learn More"
+    },
+    "product": {
+        "badge": "Our Products",
+        "lists": [
+            {
+                "label": "木薯 / 淀粉加工机器",
+                "slogan": "可靠的淀粉。可扩展的增长。以一致的质量和灵活性支持您的行业。",
+                "background": "product_cassava_tapioka_1.jpg",
+                "overview": {
+                    "label": "概述",
+                    "description": [
+                        "木薯淀粉是一种用途极为广泛的原材料，广泛应用于粉丝生产，并在造纸、纺织、食品和制药等行业的高质量变性淀粉生产中发挥着不可或缺的作用。它还可加工成葡萄糖、果糖和麦芽糖等高附加值甜味剂，为食品、饮料及健康产品制造商提供可靠的解决方案。",
+                        "我们的解决方案专为工业效率而设计，能够提供稳定一致的木薯淀粉性能，支持规模化生产。凭借其良好的适应性和稳定的品质，木薯淀粉有助于提高生产效率、改善产品质量，并推动企业长期增长。"
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "机器组件",
+                    "description": [
+                        "我们提供完整的木薯淀粉加工生产线——从原料木薯清洗到最终干燥淀粉包装。每套系统专为高产能、低浪费和食品级输出标准而精心设计。"
+                    ],
+                    "list": [
+                        "进料斗、皮带输送机及切割机",
+                        "细纤维筛与除沙分离",
+                        "桨式洗涤机与筛分机",
+                        "可提供完整交钥匙工厂设计与安装服务",
+                        "磨碎机用于细胞破壁与淀粉提取",
+                        "旋流器淀粉净化系统",
+                        "闪蒸干燥机与干筛用于成品处理"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "木薯与木薯淀粉",
+                        "image": "product_cassava_tapioka_1.jpg",
+                        "description": ""
+                    },
+                    {
+                        "name": "完整生产线",
+                        "image": "product_cassava_tapioka_2.jpg",
+                        "description": ""
+                    },
+                    {
+                        "name": "3D工厂布局",
+                        "image": "product_cassava_tapioka_3.jpg",
+                        "description": ""
+                    },
+                    {
+                        "name": "生产流程步骤",
+                        "image": "product_cassava_tapioka_4.jpg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "玉米淀粉机器",
+                "slogan": "精密研磨。稳定淀粉。从玉米粒到成品，全程品质保障。",
+                "background": "product_corn_1.jpeg",
+                "overview": {
+                    "label": "概述",
+                    "description": [
+                        "玉米淀粉是工业上使用最广泛的淀粉之一，是食品、制药、纺织和造纸行业的关键原材料。它可进一步加工成葡萄糖浆、果糖、麦芽糊精和变性淀粉等高附加值衍生产品，是众多制造工艺中不可或缺的重要原料。",
+                        "我们的玉米淀粉加工解决方案专为高效率和稳定产出而设计，支持规模化生产，品质始终如一。从湿法研磨到干燥包装，我们的系统旨在最大化产率，同时降低能耗和水耗。"
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "机器组件",
+                    "description": [
+                        "我们提供完整的玉米淀粉湿法研磨及加工生产线——从原料玉米粒清洗到最终干燥淀粉包装。每套系统专为高产能、低浪费和食品级输出标准精心设计。"
+                    ],
+                    "list": [
+                        "玉米清洗机与浸泡罐",
+                        "精细研磨机与纤维清洗系统",
+                        "旋流器淀粉洗涤与浓缩",
+                        "可提供完整交钥匙工厂设计与安装服务",
+                        "脱胚机与胚芽分离器",
+                        "麸质分离与离心纯化",
+                        "闪蒸干燥机与干筛用于成品处理"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "玉米淀粉",
+                        "image": "product_corn_1.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "干玉米粒",
+                        "image": "product_corn_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "全套玉米湿法加工生产线",
+                        "image": "product_corn_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "玉米淀粉生产设备",
+                        "image": "product_corn_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "甜味剂机器",
+                "slogan": "从淀粉到甜味剂——为每一种甜味剂等级与规模精心设计的生产线。",
+                "background": "sweetener_machine_1.png",
+                "overview": {
+                    "label": "概述",
+                    "description": [
+                        "甜味剂加工机器是专为将淀粉（主要是玉米或木薯淀粉）转化为多种精制甜味剂而设计的系统,包括麦芽糊精、麦芽糖浆、葡萄糖浆和高果糖玉米糖浆（HFCS）。这些产品在全球食品饮料制造、糖果、制药及发酵行业中不可或缺。",
+                        "我们的甜味剂加工生产线采用先进的酶水解、离子交换纯化和多效蒸发技术,生产出具有精确DE值、高透明度和稳定甜度的甜味剂产品。每条生产线均设计为全自动化、卫生操作，并可灵活扩展产能——从中试规模到完整工业产能均可满足。"
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "机器组件",
+                    "description": [
+                        "我们提供完整的甜味剂交钥匙生产线，涵盖从淀粉浆准备到最终产品包装的所有阶段——专为食品级品质和持续大批量输出而设计。"
+                    ],
+                    "list": [
+                        "淀粉浆制备与计量罐",
+                        "糖化与异构化反应罐",
+                        "活性炭脱色柱",
+                        "多效蒸发器与真空浓缩器",
+                        "喷雾干燥机 / 流化床干燥机（粉末产品适用)",
+                        "喷射蒸煮器 / 液化反应器（酶法）",
+                        "板框压滤机（用于脱蛋白）",
+                        "离子交换树脂柱（用于脱矿质）",
+                        "结晶罐与离心分离机",
+                        "可提供完整交钥匙工厂设计与安装服务"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "甜味剂加工生产线",
+                        "image": "sweetener_machine_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "完整生产线",
+                        "image": "sweetener_machine_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "3离子交换净化",
+                        "image": "sweetener_machine_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "3D工厂布局",
+                        "image": "sweetener_machine_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "甜味剂产品 （麦芽糊精、麦芽糖、葡萄糖、果糖）",
+                "slogan": "纯净。稳定。多用途——专为每一种应用场景精心打造的甜味剂产品。",
+                "background": "product_sweetener_1.png",
+                "overview": {
+                    "label": "概述",
+                    "description": [
+                        "我们供应一系列以淀粉为原料的甜味剂产品,按照食品级和工业级标准生产。我们的甜味剂通过受控酶水解和纯化工艺制造,确保每批产品具有一致的纯度、稳定的DE值和可靠的性能表现。",
+                        "无论您需要低甜度填充剂、高发酵性葡萄糖浆，还是高强度果糖甜味剂，我们的产品组合涵盖全系列甜味剂等级——适用于饮料、糖果、烘焙食品、制药及发酵等各类应用。"
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Product Range",
+                    "description": [
+                        "我们的甜味剂产品系列包含四大核心品类,每类产品均可按DE值、浓度和包装规格定制:"
+                    ],
+                    "list": [
+                        "麦芽糊精 — 低DE值(DE 5-20),水溶性粉末;用作食品和制药行业的填充剂、载体及喷雾干燥助剂",
+                        "葡萄糖浆(DE 42 / DE 63) — 用途广泛的液态甜味剂；用于糖果、饮料、罐头及发酵行业",
+                        "麦芽糖浆 — 高麦芽糖含量(40-75%）；甜度温和，热稳定性优异，适用于糖果、冰淇淋及烘焙产品",
+                        "果糖浆(HFCS 42 / HFCS 55) — 甜度高、黏度低；广泛应用于软饮料、果汁及乳制品领域"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "麦芽糊精粉",
+                        "image": "product_sweetener_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "麦芽糖浆",
+                        "image": "product_sweetener_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "葡萄糖浆",
+                        "image": "product_sweetener_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "果糖浆",
+                        "image": "product_sweetener_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Liquid Syrup",
+                "slogan": "Fluid. Functional. Flavourful — liquid syrups crafted for precision performance at every production scale.",
+                "background": "liquid_syrup_1.jpeg",
+                "overview": {
+                    "label": "概述",
+                    "description": [
+                        "Our liquid syrup product line delivers a versatile range of ready-to-use sweetening and functional solutions, developed through advanced starch hydrolysis and sugar inversion processes. Designed to meet the evolving needs of food, beverage, pharmaceutical, and industrial applications, our syrups ensure consistent Brix levels, controlled viscosity, and reliable shelf stability.",
+                        "From standard corn syrup for confectionery to high-purity sorbitol solutions for pharmaceutical and cosmetic use, each product is precisely formulated to support efficient and scalable production. Available in bulk tanker, IBC tote, and drum packaging, our solutions integrate seamlessly into your processing line.",
+                        "Produced in hygienic facilities and backed by certified quality management systems, we guarantee safe, consistent, and high-performance products for your business.",
+                        "Partner with us to optimize your production and elevate your product value. 👉 Contact us today to discuss your requirements."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Product Range",
+                    "description": [
+                        "Our liquid syrup lineup covers four label product types, each available in customizable Brix concentrations, purity grades, and packaging options:"
+                    ],
+                    "list": [
+                        "Corn Syrup — Standard DE 42/63 liquid glucose derived from corn starch; widely used in candy, bakery, canning, and brewing as a fermentable sweetener and humectant",
+                        "Invert Sugar Syrup — 50/50 glucose-fructose blend from sucrose inversion; high sweetness, excellent moisture retention, ideal for beverages, jams & soft-centred confectionery",
+                        "Caramel Syrup — Heat-treated liquid caramel; provides consistent colour, flavour and mild sweetness; used in sauces, bakery glazes, beverages & dairy products",
+                        "Sorbitol Syrup (70%) — Food-grade polyol solution; low-calorie, non-cariogenic; used in confectionery, pharmaceuticals, personal care & moisture-controlled food products"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "玉米糖浆",
+                        "image": "liquid_syrup_1.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "转化糖浆",
+                        "image": "liquid_syrup_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "焦糖糖浆",
+                        "image": "liquid_syrup_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "山梨醇糖浆",
+                        "image": "liquid_syrup_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Liquid Syrup Machines",
+                "slogan": "Engineered. Hygienic. Scalable — complete syrup processing lines built to match your production ambitions.",
+                "background": "liquid_syrup_machine_1.jpeg",
+                "overview": {
+                    "label": "概述",
+                    "description": [
+                        "Our liquid syrup machine line delivers a complete range of industrial-grade processing equipment engineered for the production of glucose syrup, invert sugar, caramel, sorbitol, and related liquid sweetener products. Each system is designed to meet the evolving demands of food, beverage, pharmaceutical, and industrial manufacturers — ensuring precise process control, hygienic operation, and consistent output quality.",
+                        "From raw starch cooking and enzyme dosing through to multi-effect evaporation and automated filling, every machine in our lineup is built for efficiency, scalability, and long-term reliability. Our modular system approach allows flexible integration into new or existing production facilities of any capacity.",
+                        "All equipment is fabricated from food-grade stainless steel, compliant with international hygiene and safety standards, and supported by our full after-sales service network including installation, commissioning, training, and spare parts supply."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Machine Range",
+                    "description": [
+                        "Our liquid syrup machine lineup covers the full production process, with each unit available in customizable capacities and automation levels:"
+                    ],
+                    "list": [
+                        "Syrup Cooking & Mixing System — Stainless steel jacketed vessels with agitators for dissolving, liquefying and enzyme-treating starch slurry; available in batch or continuous configurations",
+                        "Filtration & Clarification Unit — Plate-and-frame or membrane filter press systems for removing impurities, activated carbon decolourisation, and ion exchange resin purification",
+                        "Evaporation & Concentration Plant — Single or multi-effect falling-film evaporators for concentrating syrup to target Brix; energy-efficient design with steam economy up to 4x",
+                        "Filling & Packaging Line — Automated filling systems for bulk tankers, IBC totes, drums, and bottles; integrated with CIP (clean-in-place) and flow metering for accurate fill weights"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "3D液体糖浆生产线",
+                        "image": "liquid_syrup_machine_1.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "蒸汽夹套罐",
+                        "image": "liquid_syrup_machine_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "离子交换系统（纯化单元)",
+                        "image": "liquid_syrup_machine_3.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "灌装与包装生产线",
+                        "image": "liquid_syrup_machine_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Food Grade Rice Protein Machines",
+                "slogan": "Pure. Functional. Scalable — complete rice protein processing lines built for the growing plant-based nutrition market.",
+                "background": "rice_protein_1.png",
+                "overview": {
+                    "label": "概述",
+                    "description": [
+                        "Our food-grade rice protein machine line provides a complete set of industrial processing equipment engineered for the extraction, purification, and drying of high-purity rice protein isolate and concentrate. Designed to meet the growing demand in nutraceutical, sports nutrition, infant formula, and plant-based food industries, each system ensures consistent protein yield with clean-label compliance.",
+                        "The process integrates wet milling, enzymatic hydrolysis, centrifugal separation, ultrafiltration, and spray drying into a seamless and hygienic production flow. Our modular engineering approach allows flexible configurations—from pilot-scale units to full commercial lines with capacities exceeding several tonnes per day.",
+                        "All equipment is manufactured using food-grade materials, fully compatible with CIP/SIP systems, and built to comply with international food safety standards such as FDA, EU, and Halal requirements. Comprehensive after-sales support includes installation, operator training, and ongoing technical assistance.",
+                        "In addition to supplying advanced processing equipment, we also provide high-quality rice protein products—featuring high protein content, excellent nutritional value, and consistent premium quality to meet diverse market needs."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Machine Range",
+                    "description": [
+                        "Our rice protein machine lineup covers the complete extraction-to-packaging process, with each unit available in customizable capacities and automation levels:"
+                    ],
+                    "list": [
+                        "Rice Protein Extraction System — Wet milling and slurry preparation units for breaking down rice flour or bran into a homogeneous protein-starch slurry; includes dosing systems for enzyme and pH adjustment reagents",
+                        "Enzymatic Hydrolysis Reactor — Temperature-controlled jacketed reactors for alpha-amylase and protease enzyme treatment; precise pH and temperature monitoring for optimal protein yield and purity",
+                        "Centrifugal Separation & Ultrafiltration Unit — Decanter centrifuges and tubular membrane ultrafiltration systems for separating protein from starch, fibre, and process water; achievable protein purity of 80–90%+",
+                        "Spray Dryer Tower — High-efficiency spray drying systems converting protein concentrate into free-flowing powder; adjustable inlet/outlet temperatures and atomizer speeds for particle size and moisture control",
+                        "Packaging & Bagging Line — Automated weighing, filling, and sealing systems for bags, pouches, and bulk sacks; integrated with nitrogen flushing and metal detection for food safety compliance"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "3D工艺布局",
+                        "image": "rice_protein_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "大米蛋白产品",
+                        "image": "rice_protein_2.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "大米蛋白粉",
+                        "image": "rice_protein_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "反应罐（蛋白提取）",
+                        "image": "rice_protein_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Spare Parts",
+                "slogan": "",
+                "background": "spare_part_1.png",
+                "overview": {
+                    "label": "",
+                    "description": [
+                        ""
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "",
+                    "description": [
+                        ""
+                    ],
+                    "list": [
+                        ""
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Rasper Machine",
+                        "image": "spare_part_1.png",
+                        "description": "The rasper machine is the label equipment in the potato/cassava starch production line, which determines the extraction rate of starch. The higher the rotational speed, the finer the material is broken down, resulting in a higher starch free rate and extraction rate. All parts are made of stainless steel, available in direct-coupled and belt-drive forms. The rotor is forged from stainless steel for high strength. The unique rotor groove design makes saw blade replacement easy. Saw blades are made from special high-hardness, wear-resistant material. The rotor rotates in both directions and the saw blades are interchangeable in both directions, extending the working life of the machine and reducing operating costs."
+                    },
+                    {
+                        "name": "Rasper / Saw Blade",
+                        "image": "spare_part_2.png",
+                        "description": "Replacement saw blades for rasper machines, manufactured from high-carbon hardened steel for maximum durability and cutting efficiency. Designed to withstand the abrasive and high-moisture conditions of raw cassava processing. Available in various tooth profiles and sizes to fit different rasper drum configurations."
+                    },
+                    {
+                        "name": "Holder Saw Blade",
+                        "image": "spare_part_3.png",
+                        "description": "Heavy-duty blade holder/carrier strips used to mount and secure saw blades onto the rasper drum. Precision-engineered for tight blade spacing and even load distribution, ensuring consistent rasping performance and reduced vibration during high-speed operation."
+                    },
+                    {
+                        "name": "ESP Pump (Chemical Centrifugal Pump)",
+                        "image": "spare_part_4.png",
+                        "description": "ESP series chemical centrifugal pump designed for transferring corrosive process liquids including sulfuric acid, sodium hydroxide, and other chemical reagents used in starch and sweetener processing. Constructed with corrosion-resistant materials; available in various flow rates and head configurations."
+                    },
+                    {
+                        "name": "ZJB Pump (Fiber Pump)",
+                        "image": "spare_part_5.png",
+                        "description": "The ZJB series fiber pump is a single-stage direct-coupled centrifugal pump developed to meet industry demand for conveying media containing fibrous material of a certain length. The spiral inducer design at the pump inlet significantly improves the pump's media conveying capacity. Direct drive via the extended motor shaft increases working efficiency and ensures smoother, more stable operation. Widely used in paper, chemical, starch, and environmental industries for transferring media containing fibrous material and solid suspensions."
+                    },
+                    {
+                        "name": "XMB Pump (Defoaming Pump)",
+                        "image": "spare_part_6.png",
+                        "description": "XMB series defoaming pump engineered for handling foam-prone process liquids in starch, syrup, and protein production. The unique impeller geometry breaks down foam during pumping, eliminating the need for separate defoaming agents in many applications and ensuring stable, continuous flow."
+                    },
+                    {
+                        "name": "FBZ Pump (Self-Priming Centrifugal Pump)",
+                        "image": "spare_part_7.png",
+                        "description": "FBZ series self-priming centrifugal pump capable of re-priming automatically without manual intervention. Ideal for applications where the pump is installed above the liquid level, including tank drainage, slurry transfer, and process liquid recirculation in starch and sweetener plants. Handles liquids containing small solids and air pockets."
+                    },
+                    {
+                        "name": "FVP Pump (Food Grade Centrifugal Pump)",
+                        "image": "spare_part_8.jpeg",
+                        "description": "The FVP series food grade centrifugal pump is manufactured to the highest hygiene standards for use in food, beverage, dairy, and starch processing industries. Constructed entirely from SS316L stainless steel with food-grade seals, it is fully CIP/SIP compatible. Smooth internal surfaces prevent bacterial build-up, ensuring clean and safe transfer of food-grade liquids including syrups, protein concentrates, and starch slurries."
+                    },
+                    {
+                        "name": "Sanitary Centrifugal Pump",
+                        "image": "spare_part_9.jpeg",
+                        "description": "The sanitary centrifugal pump is designed specifically for hygienic process applications in food, pharmaceutical, and biotechnology industries. Features a crevice-free, polished internal surface finish to prevent contamination and facilitate thorough cleaning. Fully compliant with GMP, FDA, and EHEDG hygienic design standards. Suitable for transferring sensitive process liquids such as glucose syrup, rice protein solution, and other food-grade media requiring strict sanitary conditions."
+                    }
+                ]
+            }
+        ]
+    },
+    "service": {
+        "badge": "What We Do",
+        "title": "Precision Built.",
+        "subtitle": "Industry Proven.",
+        "lists": [
+            {
+                "key": "machine_design",
+                "title": "Machine Design & Engineering",
+                "description": "Custom design and engineering of industrial processing machinery tailored to your factory needs—from concept development to complete technical drawings."
+            },
+            {
+                "key": "manufacturing",
+                "title": "Equipment Manufacturing",
+                "description": "We deliver high-precision, modern processing equipment engineered for reliable performance and continuous industrial operation."
+            },
+            {
+                "key": "factory_line",
+                "title": "Complete Factory Line",
+                "description": "Fully integrated, tested, and ready for production lines for agricultural factories—delivered as a complete end-to-end solution."
+            },
+            {
+                "key": "installation",
+                "title": "Installation & Commissioning",
+                "description": "Professional on-site installation and testing to ensure your machinery performs optimally from day one."
+            },
+            {
+                "key": "after_sales",
+                "title": "After-Sales & Maintenance",
+                "description": "Comprehensive support including spare parts supply, preventive maintenance, and emergency repair services worldwide."
+            },
+            {
+                "key": "consultation",
+                "title": "Project Consultation",
+                "description": "Expert factory planning and layout consultation to help you design the most efficient processing plant for your investment."
+            }
+        ]
+    },
+    "market": {
+        "badge": "Domestic and Internasional Market",
+        "description": [
+            "<highlight>Serving Global Markets with Proven Expertise</highlight> — We supply high-quality machinery and deliver reliable processing solutions for a wide range of agro-industries, including tapioca, palm oil, corn starch, sweeteners, and rice protein. <highlight>Built on over 30 years of proven industry experience</highlight>, our equipment is engineered with precision and advanced technology to ensure stable performance, efficiency, and long-term operational reliability.",
+            "With <highlight>installations in 15+ countries</highlight>, our solutions are widely adopted across Asia, Europe, and Russia, supporting diverse industrial applications. From standalone machines to complete production lines, we provide scalable solutions tailored to meet evolving global demands."
+        ]
+    },
+    "contact": {
+        "address": [
+            "Jl. Lingkar Luar Kamal Raya,",
+            "Komp. Taman Palem Mutiara A8 No. 5,",
+            "Cengkareng - West Jakarta"
+        ],
+        "phone": [
+            "+62 821-8929-9995",
+            "+62 812-886-3428"
+        ],
+        "mail": [
+            "sunssebaruindonesia@gmail.com"
+        ],
+        "social_media": [
+            {
+                "link": "https://www.tiktok.com/@sunssebaru_indonesia",
+                "username": "@sunssebaru_indonesia",
+                "key": "tiktok"
+            },
+            {
+                "link": "",
+                "username": "@qlixes",
+                "key": "instagram"
+            },
+            {
+                "link": "",
+                "username": "",
+                "key": "facebook"
+            },
+            {
+                "link": "",
+                "username": "",
+                "key": "linkedin"
+            }
+        ],
+        "schedule": [
+            "Monday - Friday: 08:00 - 5 PM (West Indonesia Time)",
+            "Saturday & Sunday: 08:00 - 3 PM (West Indonesia Time)"
+        ],
+        "slogan": "Your Vision. Our Precision.",
+        "title": [
+            "Engineered for <highlight>Performance</highlight>.",
+            "Built for <highlight>Industry</highlight>."
+        ],
+        "description": [
+            "<highlight>Ready to build, upgrade, or optimize your processing plant?</highlight> From complete machinery systems to high-quality spare parts, we deliver everything you need to keep your operations running at peak performance. Our engineering team provides tailored solutions for any scale—efficient, reliable, and built to last."
+        ],
+        "mission": [
+            "Tell us your requirements — we deliver the solution."
+        ],
+        "form": [
+            {
+                "key": "name",
+                "type": "input",
+                "label": "Full Name",
+                "required": true
+            },
+            {
+                "key": "company",
+                "type": "input",
+                "label": "Company",
+                "required": false
+            },
+            {
+                "key": "email",
+                "type": "input",
+                "label": "Email",
+                "required": true
+            },
+            {
+                "key": "country",
+                "type": "input",
+                "label": "Country",
+                "required": true
+            },
+            {
+                "key": "message",
+                "type": "textarea",
+                "label": "Message",
+                "required": true
+            }
+        ],
+        "button": {
+            "sending": "Sending",
+            "submit": "Send Message"
+        }
     }
 }

@@ -5,6 +5,7 @@ import About from '@/components/sections/About';
 import Product from '@/components/sections/Product';
 import Service from '@/components/sections/Services';
 import Market from '@/components/sections/Market';
+import Contact from '@/components/sections/Contact';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <Product />
                 <Service />
                 <Market />
+                <Contact />
             </MainLayout>
         </>
     )

@@ -15,5 +15,593 @@
             "service": "Layanan Kami",
             "contact": "Hubungi Kami"
         }
+    },
+    "about": {
+        "badge": "Siapa Kami",
+        "mission": {
+            "label": "Misi",
+            "description": [
+                "Menyediakan mesin dan peralatan industri berkualitas tinggi dan inovatif.",
+                "Meningkatkan produktivitas pelanggan melalui solusi teknis yang efisien dan berkelanjutan.",
+                "Memberikan layanan purna jual yang responsif dan profesional.",
+                "Membangun kemitraan jangka panjang berdasarkan kepercayaan"
+            ]
+        },
+        "vision": {
+            "label": "Visi",
+            "description": [
+                "Menjadi perusahaan terkemuka yang profesional dan berpengalaman dalam manufaktur mesin dan peralatan industri, berspesialisasi dalam menghadirkan solusi lini pengolahan yang lengkap dan terintegrasi untuk pabrik tapioka, jagung, sagu, dan pemanis bagi klien di Indonesia dan seluruh dunia dengan standar internasional, berfokus pada kualitas, efisiensi, dan kepuasan pelanggan."
+            ]
+        },
+        "brand": {
+            "description": [
+                "PT Sunsse Baru Indonesia adalah produsen profesional dan berpengalaman di bidang mesin dan peralatan industri, mengkhususkan diri dalam memberikan solusi lini pengolahan lengkap dan terintegrasi untuk pabrik tapioka, jagung, sagu, dan pemanis kepada pelanggan di seluruh dunia. Sunsse adalah penyedia peralatan profesional dan solusi rekayasa turn-key untuk proyek Pati dan turunan Pati (termasuk pemanis lainnya, gula alkohol, dan asam organik).",
+                "Dengan pengalaman rekayasa lebih dari tiga dekade, kami merancang, memfabrikasi, dan mengantarkan mesin berperforma tinggi yang menggerakkan pabrik pengolahan pertanian dan pangan skala besar di Asia, Eropa, dan lebih jauh, memastikan keandalan, efisiensi, dan keunggulan operasional jangka panjang.",
+                "Tim insinyur dan spesialis teknis kami yang berdedikasi memastikan setiap mesin yang kami produksi memenuhi standar kualitas internasional tertinggi — dirancang dengan cermat untuk tahan lama, direkayasa dengan tepat untuk berkinerja, dan didukung penuh sepanjang masa operasionalnya."
+            ],
+            "slogan": "Direkayasa untuk Dunia"
+        },
+        "title_part1": "Dibangun dengan",
+        "title_mark_part1": "Keahlian",
+        "title_part2": "Dipercaya oleh",
+        "title_mark_part2": "Pelanggan",
+        "stats": {
+            "countries": "Negara Dilayani",
+            "machines": "Mesin Terpasang (Domestik & Internasional)",
+            "experience": "Tahun Pengalaman",
+            "satisfaction": "Kepuasan Klien"
+        },
+        "learn_more": "Pelajari Lebih Lanjut"
+    },
+    "product": {
+        "badge": "Produk Kami",
+        "lists": [
+            {
+                "label": "Mesin Tepung Tapioka/Singkong",
+                "slogan": "Pati andal. Pertumbuhan tanpa batas. Mendukung industri Anda dengan kualitas yang konsisten dan fleksibel.",
+                "background": "product_cassava_tapioka_1.jpg",
+                "overview": {
+                    "label": "Ikhtisar",
+                    "description": [
+                        "Pati singkong merupakan bahan baku yang sangat fleksibel, digunakan secara luas dalam produksi bihun serta menjadi komponen penting dalam pembuatan pati termodifikasi untuk industri kertas, tekstil, makanan, dan farmasi. Selain itu, pati singkong dapat diolah menjadi pemanis bernilai tinggi seperti glukosa, fruktosa, dan maltosa, menjadikannya solusi andal bagi industri makanan, minuman, dan produk kesehatan.",
+                        "Dirancang untuk efisiensi dan dibuat untuk kebutuhan industri, solusi kami menghadirkan performa pati singkong yang konsisten untuk produksi yang skalabel. Dengan kualitas yang stabil dan fleksibilitas tinggi, pati singkong membantu meningkatkan efisiensi, kualitas produk, serta pertumbuhan bisnis jangka panjang."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Komponen Mesin",
+                    "description": [
+                        "Kami menyediakan lini pengolahan tapioka dan tepung singkong secara lengkap — mulai dari pencucian umbi singkong mentah hingga pengemasan tepung kering akhir. Setiap sistem dirancang untuk kapasitas tinggi, limbah minimal, dan standar keluaran food-grade."
+                    ],
+                    "list": [
+                        "Hopper umpan, belt conveyor & mesin pemotong",
+                        "Saringan serat halus & pemisahan desander",
+                        "Mesin cuci dayung & saringan sifter",
+                        "Tersedia desain & instalasi pabrik turnkey penuh",
+                        "Rasper untuk pemecahan sel & ekstraksi pati",
+                        "Sistem pemurnian pati hydrocyclone",
+                        "Flash dryer & ayakan kering untuk produk akhir"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Singkong & Tepung Tapioka",
+                        "image": "product_cassava_tapioka_1.jpg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lini Produksi Lengkap",
+                        "image": "product_cassava_tapioka_2.jpg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Tata Letak Pabrik 3D",
+                        "image": "product_cassava_tapioka_3.jpg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Tahapan Proses Produksi",
+                        "image": "product_cassava_tapioka_4.jpg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Mesin Tepung Maizena",
+                "slogan": "Penggilingan presisi. Pati konsisten. Menghadirkan kualitas dari biji jagung hingga produk akhir.",
+                "background": "product_corn_1.jpeg",
+                "overview": {
+                    "label": "Ikhtisar",
+                    "description": [
+                        "Pati jagung adalah salah satu pati industri yang paling banyak digunakan, menjadi bahan baku utama dalam industri makanan, farmasi, tekstil, dan kertas. Pati jagung dapat diolah lebih lanjut menjadi produk turunan bernilai tinggi seperti sirup glukosa, fruktosa, maltodekstrin, dan pati termodifikasi, menjadikannya input penting untuk berbagai proses manufaktur.",
+                        "Solusi pengolahan pati jagung kami dirancang untuk efisiensi tinggi dan hasil yang konsisten, mendukung produksi berskala besar dengan kualitas stabil. Dari penggilingan basah hingga pengeringan dan pengemasan, sistem kami dibangun untuk memaksimalkan hasil panen sekaligus meminimalkan konsumsi energi dan air."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Komponen Mesin",
+                    "description": [
+                        "Kami menyediakan lini penggilingan basah dan pengolahan pati jagung secara lengkap — mulai dari pembersihan biji jagung mentah hingga pengemasan tepung kering akhir. Setiap sistem dirancang untuk kapasitas tinggi, limbah minimal, dan standar keluaran food-grade."
+                    ],
+                    "list": [
+                        "Pembersihan jagung & tangki perendaman",
+                        "Mesin giling halus & sistem pencucian serat",
+                        "Pencucian & konsentrasi pati hydrocyclone",
+                        "Tersedia desain & instalasi pabrik turnkey penuh",
+                        "Degerminator & pemisah lembaga",
+                        "Pemisahan gluten & pemurnian sentrifugal",
+                        "Flash dryer & ayakan kering untuk produk akhir"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Tepung Jagung",
+                        "image": "product_corn_1.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "JAGUNG KERING",
+                        "image": "product_corn_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "SISTEM PENGOLAHAN JAGUNG LENGKAP",
+                        "image": "product_corn_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "MESIN PENGOLAHAN PATI JAGUNG",
+                        "image": "product_corn_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Mesin Pemanis",
+                "slogan": "Dari pati menjadi pemanis — lini berteknologi presisi untuk setiap grade dan skala pemanis.",
+                "background": "sweetener_machine_1.png",
+                "overview": {
+                    "label": "Ikhtisar",
+                    "description": [
+                        "Mesin pengolahan pemanis adalah sistem yang dirancang khusus untuk mengkonversi pati — terutama pati jagung atau singkong — menjadi berbagai pemanis olahan seperti maltodekstrin, sirup maltosa, sirup glukosa, dan sirup jagung fruktosa tinggi (HFCS). Produk-produk ini sangat penting dalam industri makanan dan minuman, kembang gula, farmasi, serta fermentasi di seluruh dunia.",
+                        "Lini pengolahan pemanis kami menggunakan teknologi hidrolisis enzimatis canggih, pemurnian penukar ion, dan evaporasi multi-efek untuk menghasilkan pemanis dengan nilai DE yang tepat, kejernihan tinggi, dan profil kemanisan yang konsisten. Setiap pabrik dirancang untuk otomatisasi penuh, operasi higienis, dan kapasitas yang dapat diskalakan — dari skala percontohan hingga kapasitas industri penuh."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Komponen Mesin",
+                    "description": [
+                        "Kami menyediakan lini produksi pemanis turnkey lengkap yang mencakup semua tahap mulai dari persiapan slurry pati hingga pengemasan produk akhir — dirancang untuk kualitas food-grade dan output volume tinggi yang berkelanjutan."
+                    ],
+                    "list": [
+                        "Tangki persiapan & dosing slurry pati",
+                        "Bejana sakarifikasi & isomerisasi",
+                        "Kolom dekolorisasi karbon aktif",
+                        "Evaporator multi-efek & konsentrator vakum",
+                        "Spray dryer / fluidized bed dryer (untuk output bubuk)",
+                        "Jet cooker / reaktor likuifikasi (enzimatis)",
+                        "Filter press plate & frame untuk deproteinisasi",
+                        "Kolom resin penukar ion untuk demineralisasi",
+                        "Tangki kristalisasi & separator sentrifugal",
+                        "Tersedia desain & instalasi pabrik turnkey penuh"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "LINI PRODUKSI PEMANIS",
+                        "image": "sweetener_machine_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "Lini Produksi Lengkap",
+                        "image": "sweetener_machine_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Proses Pemurnian dengan Pertukaran Ion",
+                        "image": "sweetener_machine_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Tata Letak Pabrik 3D",
+                        "image": "sweetener_machine_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Produk Pemanis<br>(Maltodekstrin, Maltosa, Glukosa, Fruktosa)",
+                "slogan": "Murni. Konsisten. Serbaguna — produk pemanis yang dirancang untuk performa optimal di setiap aplikasi.",
+                "background": "product_sweetener_1.png",
+                "overview": {
+                    "label": "Ikhtisar",
+                    "description": [
+                        "Kami menyuplai rangkaian lengkap produk pemanis berbasis pati, diproduksi sesuai standar food-grade dan industrial-grade. Pemanis kami diproduksi melalui proses hidrolisis enzimatis dan pemurnian terkontrol, memastikan kemurnian yang konsisten, nilai DE yang stabil, dan performa andal di setiap batch produksi.",
+                        "Baik Anda membutuhkan agen pengisi dengan tingkat kemanisan rendah, sirup glukosa berfermentabilitas tinggi, atau pemanis fruktosa intensitas tinggi — portofolio produk kami mencakup spektrum lengkap grade pemanis, cocok untuk minuman, kembang gula, produk bakeri, farmasi, dan aplikasi fermentasi."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Rangkaian Produk",
+                    "description": [
+                        "Lini produk pemanis kami mencakup empat kategori utama, masing-masing tersedia dalam nilai DE, konsentrasi, dan format kemasan yang dapat disesuaikan:"
+                    ],
+                    "list": [
+                        "Maltodekstrin — DE rendah (DE 5-20), bubuk larut air; digunakan sebagai agen pengisi, pembawa, dan bahan spray-dry dalam industri pangan & farmasi",
+                        "Sirup Glukosa (DE 42 / DE 63) — Pemanis cair serbaguna; digunakan dalam kembang gula, minuman, pengalengan & fermentasi",
+                        "Sirup Maltosa — Kandungan maltosa tinggi (40-75%); rasa manis ringan, stabilitas panas sangat baik, ideal untuk permen, es krim & bakeri",
+                        "Sirup Fruktosa (HFCS 42 / HFCS 55) — Kemanisan tinggi, viskositas rendah; banyak digunakan dalam minuman ringan, jus & aplikasi susu"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Bubuk Maltodextrin",
+                        "image": "product_sweetener_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "SIRUP MALTOSA",
+                        "image": "product_sweetener_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "SIRUP GLUKOSA",
+                        "image": "product_sweetener_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "SIRUP FRUKTOSA",
+                        "image": "product_sweetener_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Sirup Cair",
+                "slogan": "Fluid. Functional. Flavourful — liquid syrups crafted for precision performance at every production scale.",
+                "background": "liquid_syrup_1.jpeg",
+                "overview": {
+                    "label": "Ikhtisar",
+                    "description": [
+                        "Our liquid syrup product line delivers a versatile range of ready-to-use sweetening and functional solutions, developed through advanced starch hydrolysis and sugar inversion processes. Designed to meet the evolving needs of food, beverage, pharmaceutical, and industrial applications, our syrups ensure consistent Brix levels, controlled viscosity, and reliable shelf stability.",
+                        "From standard corn syrup for confectionery to high-purity sorbitol solutions for pharmaceutical and cosmetic use, each product is precisely formulated to support efficient and scalable production. Available in bulk tanker, IBC tote, and drum packaging, our solutions integrate seamlessly into your processing line.",
+                        "Produced in hygienic facilities and backed by certified quality management systems, we guarantee safe, consistent, and high-performance products for your business.",
+                        "Partner with us to optimize your production and elevate your product value. 👉 Contact us today to discuss your requirements."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Rangkaian Produk",
+                    "description": [
+                        "Our liquid syrup lineup covers four label product types, each available in customizable Brix concentrations, purity grades, and packaging options:"
+                    ],
+                    "list": [
+                        "Corn Syrup — Standard DE 42/63 liquid glucose derived from corn starch; widely used in candy, bakery, canning, and brewing as a fermentable sweetener and humectant",
+                        "Invert Sugar Syrup — 50/50 glucose-fructose blend from sucrose inversion; high sweetness, excellent moisture retention, ideal for beverages, jams & soft-centred confectionery",
+                        "Caramel Syrup — Heat-treated liquid caramel; provides consistent colour, flavour and mild sweetness; used in sauces, bakery glazes, beverages & dairy products",
+                        "Sorbitol Syrup (70%) — Food-grade polyol solution; low-calorie, non-cariogenic; used in confectionery, pharmaceuticals, personal care & moisture-controlled food products"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "SIRUP JAGUNG",
+                        "image": "liquid_syrup_1.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "SIRUP GULA",
+                        "image": "liquid_syrup_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "SIRUP KARAMEL",
+                        "image": "liquid_syrup_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "SIRUP SORBITOL",
+                        "image": "liquid_syrup_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Mesin Sirup Cair",
+                "slogan": "Engineered. Hygienic. Scalable — complete syrup processing lines built to match your production ambitions.",
+                "background": "liquid_syrup_machine_1.jpeg",
+                "overview": {
+                    "label": "Ikhtisar",
+                    "description": [
+                        "Our liquid syrup machine line delivers a complete range of industrial-grade processing equipment engineered for the production of glucose syrup, invert sugar, caramel, sorbitol, and related liquid sweetener products. Each system is designed to meet the evolving demands of food, beverage, pharmaceutical, and industrial manufacturers — ensuring precise process control, hygienic operation, and consistent output quality.",
+                        "From raw starch cooking and enzyme dosing through to multi-effect evaporation and automated filling, every machine in our lineup is built for efficiency, scalability, and long-term reliability. Our modular system approach allows flexible integration into new or existing production facilities of any capacity.",
+                        "All equipment is fabricated from food-grade stainless steel, compliant with international hygiene and safety standards, and supported by our full after-sales service network including installation, commissioning, training, and spare parts supply."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Machine Range",
+                    "description": [
+                        "Our liquid syrup machine lineup covers the full production process, with each unit available in customizable capacities and automation levels:"
+                    ],
+                    "list": [
+                        "Syrup Cooking & Mixing System — Stainless steel jacketed vessels with agitators for dissolving, liquefying and enzyme-treating starch slurry; available in batch or continuous configurations",
+                        "Filtration & Clarification Unit — Plate-and-frame or membrane filter press systems for removing impurities, activated carbon decolourisation, and ion exchange resin purification",
+                        "Evaporation & Concentration Plant — Single or multi-effect falling-film evaporators for concentrating syrup to target Brix; energy-efficient design with steam economy up to 4x",
+                        "Filling & Packaging Line — Automated filling systems for bulk tankers, IBC totes, drums, and bottles; integrated with CIP (clean-in-place) and flow metering for accurate fill weights"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "3D Lini Produksi Sirup Cair",
+                        "image": "liquid_syrup_machine_1.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Tangki Berjaket Uap",
+                        "image": "liquid_syrup_machine_2.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Sistem Pertukaran Ion (Unit Pemurnian)",
+                        "image": "liquid_syrup_machine_3.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "LINI PENGISIAN & PENGEMASAN",
+                        "image": "liquid_syrup_machine_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Mesin Protein Beras Food Grade",
+                "slogan": "Pure. Functional. Scalable — complete rice protein processing lines built for the growing plant-based nutrition market.",
+                "background": "rice_protein_1.png",
+                "overview": {
+                    "label": "Ikhtisar",
+                    "description": [
+                        "Our food-grade rice protein machine line provides a complete set of industrial processing equipment engineered for the extraction, purification, and drying of high-purity rice protein isolate and concentrate. Designed to meet the growing demand in nutraceutical, sports nutrition, infant formula, and plant-based food industries, each system ensures consistent protein yield with clean-label compliance.",
+                        "The process integrates wet milling, enzymatic hydrolysis, centrifugal separation, ultrafiltration, and spray drying into a seamless and hygienic production flow. Our modular engineering approach allows flexible configurations—from pilot-scale units to full commercial lines with capacities exceeding several tonnes per day.",
+                        "All equipment is manufactured using food-grade materials, fully compatible with CIP/SIP systems, and built to comply with international food safety standards such as FDA, EU, and Halal requirements. Comprehensive after-sales support includes installation, operator training, and ongoing technical assistance.",
+                        "In addition to supplying advanced processing equipment, we also provide high-quality rice protein products—featuring high protein content, excellent nutritional value, and consistent premium quality to meet diverse market needs."
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "Machine Range",
+                    "description": [
+                        "Our rice protein machine lineup covers the complete extraction-to-packaging process, with each unit available in customizable capacities and automation levels:"
+                    ],
+                    "list": [
+                        "Rice Protein Extraction System — Wet milling and slurry preparation units for breaking down rice flour or bran into a homogeneous protein-starch slurry; includes dosing systems for enzyme and pH adjustment reagents",
+                        "Enzymatic Hydrolysis Reactor — Temperature-controlled jacketed reactors for alpha-amylase and protease enzyme treatment; precise pH and temperature monitoring for optimal protein yield and purity",
+                        "Centrifugal Separation & Ultrafiltration Unit — Decanter centrifuges and tubular membrane ultrafiltration systems for separating protein from starch, fibre, and process water; achievable protein purity of 80–90%+",
+                        "Spray Dryer Tower — High-efficiency spray drying systems converting protein concentrate into free-flowing powder; adjustable inlet/outlet temperatures and atomizer speeds for particle size and moisture control",
+                        "Packaging & Bagging Line — Automated weighing, filling, and sealing systems for bags, pouches, and bulk sacks; integrated with nitrogen flushing and metal detection for food safety compliance"
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "LAYOUT PROSES 3D",
+                        "image": "rice_protein_1.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "PROTEIN BERAS",
+                        "image": "rice_protein_2.png",
+                        "description": ""
+                    },
+                    {
+                        "name": "BUBUK PROTEIN BERAS",
+                        "image": "rice_protein_3.jpeg",
+                        "description": ""
+                    },
+                    {
+                        "name": "Tangki Reaktor (Ekstraksi Protein)",
+                        "image": "rice_protein_4.jpeg",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "label": "Suku Cadang",
+                "slogan": "",
+                "background": "spare_part_1.png",
+                "overview": {
+                    "label": "",
+                    "description": [
+                        ""
+                    ],
+                    "list": []
+                },
+                "component": {
+                    "label": "",
+                    "description": [
+                        ""
+                    ],
+                    "list": [
+                        ""
+                    ]
+                },
+                "list": [
+                    {
+                        "name": "Rasper Machine",
+                        "image": "spare_part_1.png",
+                        "description": "The rasper machine is the label equipment in the potato/cassava starch production line, which determines the extraction rate of starch. The higher the rotational speed, the finer the material is broken down, resulting in a higher starch free rate and extraction rate. All parts are made of stainless steel, available in direct-coupled and belt-drive forms. The rotor is forged from stainless steel for high strength. The unique rotor groove design makes saw blade replacement easy. Saw blades are made from special high-hardness, wear-resistant material. The rotor rotates in both directions and the saw blades are interchangeable in both directions, extending the working life of the machine and reducing operating costs."
+                    },
+                    {
+                        "name": "Rasper / Saw Blade",
+                        "image": "spare_part_2.png",
+                        "description": "Replacement saw blades for rasper machines, manufactured from high-carbon hardened steel for maximum durability and cutting efficiency. Designed to withstand the abrasive and high-moisture conditions of raw cassava processing. Available in various tooth profiles and sizes to fit different rasper drum configurations."
+                    },
+                    {
+                        "name": "Holder Saw Blade",
+                        "image": "spare_part_3.png",
+                        "description": "Heavy-duty blade holder/carrier strips used to mount and secure saw blades onto the rasper drum. Precision-engineered for tight blade spacing and even load distribution, ensuring consistent rasping performance and reduced vibration during high-speed operation."
+                    },
+                    {
+                        "name": "ESP Pump (Chemical Centrifugal Pump)",
+                        "image": "spare_part_4.png",
+                        "description": "ESP series chemical centrifugal pump designed for transferring corrosive process liquids including sulfuric acid, sodium hydroxide, and other chemical reagents used in starch and sweetener processing. Constructed with corrosion-resistant materials; available in various flow rates and head configurations."
+                    },
+                    {
+                        "name": "ZJB Pump (Fiber Pump)",
+                        "image": "spare_part_5.png",
+                        "description": "The ZJB series fiber pump is a single-stage direct-coupled centrifugal pump developed to meet industry demand for conveying media containing fibrous material of a certain length. The spiral inducer design at the pump inlet significantly improves the pump's media conveying capacity. Direct drive via the extended motor shaft increases working efficiency and ensures smoother, more stable operation. Widely used in paper, chemical, starch, and environmental industries for transferring media containing fibrous material and solid suspensions."
+                    },
+                    {
+                        "name": "XMB Pump (Defoaming Pump)",
+                        "image": "spare_part_6.png",
+                        "description": "XMB series defoaming pump engineered for handling foam-prone process liquids in starch, syrup, and protein production. The unique impeller geometry breaks down foam during pumping, eliminating the need for separate defoaming agents in many applications and ensuring stable, continuous flow."
+                    },
+                    {
+                        "name": "FBZ Pump (Self-Priming Centrifugal Pump)",
+                        "image": "spare_part_7.png",
+                        "description": "FBZ series self-priming centrifugal pump capable of re-priming automatically without manual intervention. Ideal for applications where the pump is installed above the liquid level, including tank drainage, slurry transfer, and process liquid recirculation in starch and sweetener plants. Handles liquids containing small solids and air pockets."
+                    },
+                    {
+                        "name": "FVP Pump (Food Grade Centrifugal Pump)",
+                        "image": "spare_part_8.jpeg",
+                        "description": "The FVP series food grade centrifugal pump is manufactured to the highest hygiene standards for use in food, beverage, dairy, and starch processing industries. Constructed entirely from SS316L stainless steel with food-grade seals, it is fully CIP/SIP compatible. Smooth internal surfaces prevent bacterial build-up, ensuring clean and safe transfer of food-grade liquids including syrups, protein concentrates, and starch slurries."
+                    },
+                    {
+                        "name": "Sanitary Centrifugal Pump",
+                        "image": "spare_part_9.jpeg",
+                        "description": "The sanitary centrifugal pump is designed specifically for hygienic process applications in food, pharmaceutical, and biotechnology industries. Features a crevice-free, polished internal surface finish to prevent contamination and facilitate thorough cleaning. Fully compliant with GMP, FDA, and EHEDG hygienic design standards. Suitable for transferring sensitive process liquids such as glucose syrup, rice protein solution, and other food-grade media requiring strict sanitary conditions."
+                    }
+                ]
+            }
+        ]
+    },
+    "service": {
+        "badge": "Apa yang Kami Lakukan",
+        "title": "Precision Built.",
+        "subtitle": "Industry Proven.",
+        "lists": [
+            {
+                "key": "machine_design",
+                "title": "Desain & Rekayasa Mesin",
+                "description": "Desain dan rekayasa kustom mesin pengolahan industri yang disesuaikan dengan kebutuhan spesifik pabrik Anda — dari konsep hingga gambar teknis lengkap."
+            },
+            {
+                "key": "manufacturing",
+                "title": "Manufaktur Peralatan",
+                "description": "Fabrikasi presisi tinggi peralatan pengolahan untuk pabrik tapioka, jagung, CPO, dan pemanis menggunakan bahan berkualitas premium dan teknik manufaktur modern."
+            },
+            {
+                "key": "factory_line",
+                "title": "Lini Pabrik Lengkap",
+                "description": "Kami menyuplai dan menginstal lini pengolahan lengkap end-to-end untuk pabrik pertanian — terintegrasi penuh, diuji, dan siap produksi."
+            },
+            {
+                "key": "installation",
+                "title": "Instalasi & Komisioning",
+                "description": "Instalasi di lokasi, pengujian, dan komisioning semua mesin dan peralatan secara profesional untuk memastikan kinerja optimal sejak hari pertama."
+            },
+            {
+                "key": "after_sales",
+                "title": "Purna Jual & Pemeliharaan",
+                "description": "Dukungan purna jual komprehensif termasuk pasokan suku cadang, pemeliharaan preventif, pelatihan teknis, dan layanan perbaikan darurat di seluruh dunia."
+            },
+            {
+                "key": "consultation",
+                "title": "Konsultasi Proyek",
+                "description": "Perencanaan pabrik ahli dan konsultasi proyek — kami membantu Anda merancang tata letak pabrik pengolahan yang paling efisien dan hemat biaya untuk investasi Anda."
+            }
+        ]
+    },
+    "market": {
+        "badge": "Domestic and Internasional Market",
+        "description": [
+            "<highlight>Melayani Pasar Global dengan Keahlian Teruji</highlight> — Kami menyuplai mesin berkualitas tinggi serta menghadirkan solusi pengolahan yang andal untuk berbagai industri pertanian, termasuk tapioka, kelapa sawit, pati jagung, pemanis, dan rice protein. <highlight>Dibangun di atas lebih dari 30 tahun pengalaman industri yang teruji</highlight>, peralatan kami dirancang dengan presisi dan teknologi modern untuk memastikan performa yang stabil, efisiensi, serta keandalan operasional jangka panjang.",
+            "Dengan <highlight>pemasangan di lebih dari 15 negara</highlight>, produk kami telah digunakan secara luas di Asia, Eropa, dan Rusia untuk berbagai aplikasi industri. Mulai dari mesin tunggal hingga lini produksi lengkap, kami menghadirkan solusi yang fleksibel dan skalabel sesuai dengan kebutuhan pasar global."
+        ]
+    },
+    "contact": {
+        "address": [
+            "Jl. Lingkar Luar Kamal Raya,",
+            "Komp. Taman Palem Mutiara A8 No. 5,",
+            "Cengkareng - West Jakarta"
+        ],
+        "phone": [
+            "+62 821-8929-9995",
+            "+62 812-886-3428"
+        ],
+        "mail": [
+            "sunssebaruindonesia@gmail.com"
+        ],
+        "social_media": [
+            {
+                "link": "https://www.tiktok.com/@sunssebaru_indonesia",
+                "username": "@sunssebaru_indonesia",
+                "key": "tiktok"
+            },
+            {
+                "link": "",
+                "username": "@qlixes",
+                "key": "instagram"
+            },
+            {
+                "link": "",
+                "username": "",
+                "key": "facebook"
+            },
+            {
+                "link": "",
+                "username": "",
+                "key": "linkedin"
+            }
+        ],
+        "schedule": [
+            "Senin - Jumat: 08:00 - 17:00 (WIB)",
+            "Sabtu & Minggu: 08:00 - 15:00 (WIB)"
+        ],
+        "slogan": "Your Vision. Our Precision.",
+        "title": [
+            "Dirancang untuk <highlight>Performa.</highlight>",
+            "Dibuat untuk <highlight>Industri.</highlight>"
+        ],
+        "description": [
+            "<highlight>Siap membangun, meningkatkan, atau mengoptimalkan lini produksi Anda?</highlight> Mulai dari sistem mesin lengkap hingga spare part berkualitas tinggi, kami menghadirkan semua yang Anda butuhkan untuk memastikan operasional berjalan maksimal. Tim engineering kami siap memberikan solusi yang tepat untuk berbagai skala kebutuhan—efisien, andal, dan tahan lama."
+        ],
+        "mission": [
+            "Sampaikan kebutuhan Anda—kami hadir dengan solusinya."
+        ],
+        "form": [
+            {
+                "key": "name",
+                "type": "input",
+                "label": "Nama Lengkap",
+                "required": true
+            },
+            {
+                "key": "company",
+                "type": "input",
+                "label": "Perusahaan",
+                "required": false
+            },
+            {
+                "key": "email",
+                "type": "input",
+                "label": "Email",
+                "required": true
+            },
+            {
+                "key": "country",
+                "type": "input",
+                "label": "Negara",
+                "required": true
+            },
+            {
+                "key": "message",
+                "type": "textarea",
+                "label": "Pesan",
+                "required": true
+            }
+        ],
+        "button": {
+            "sending": "Mengirim",
+            "submit": "Kirim Pesan"
+        }
     }
 }
