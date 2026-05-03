@@ -10,13 +10,6 @@ import {
 	IconBrandWhatsapp
 } from '@tabler/icons-react';
 
-const socialIcons: Record<string, React.ElementType> = {
-	tiktok: IconBrandTiktok,
-	instagram: IconBrandInstagram,
-	facebook: IconBrandFacebook,
-	linkedin: IconBrandLinkedin,
-};
-
 export default function Contact() {
 	const { t } = useTranslation();
 
@@ -34,7 +27,6 @@ export default function Contact() {
 	const title = t('contact.title', { returnObjects: true }) as string[];
 	const description = t('contact.description', { returnObjects: true }) as string[];
 	const mission = t('contact.mission', { returnObjects: true }) as string[];
-	const socialMedia = t('contact.social_media', { returnObjects: true }) as any[];
 	const formFields = t('contact.form', { returnObjects: true }) as any[];
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
