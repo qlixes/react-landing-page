@@ -1,5 +1,3 @@
-import { useTranslation } from 'react-i18next';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
