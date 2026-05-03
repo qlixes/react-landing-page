@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react'; // ← tambah useEffect
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowRight, FileText, Cog, ChevronRight, Eye, Maximize2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -7,13 +7,24 @@ export default function Product() {
     const { t } = useTranslation();
     const productLists = t('product.lists', { returnObjects: true }) as any[];
 
-    // State untuk Sidebar Utama
     const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
-
-    // State untuk Modal Detail Sub-Product
     const [activeSubProduct, setActiveSubProduct] = useState<any | null>(null);
 
     const selectedProduct = selectedIdx !== null ? productLists[selectedIdx] : null;
+
+    // ✅ Lock scroll ketika sidebar atau modal terbuka
+    useEffect(() => {
+        const isOpen = selectedIdx !== null || activeSubProduct !== null;
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [selectedIdx, activeSubProduct]);
+
+    // Helper close — pastikan scroll selalu di-restore
+    const closeSidebar = () => setSelectedIdx(null);
+    const closeModal = () => setActiveSubProduct(null);
 
     return (
         <section id="product" className="bg-white scroll-mt-32">
@@ -43,7 +54,6 @@ export default function Product() {
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/20 to-slate-950" />
                             </div>
-
                             <div className="relative z-10 p-10 flex-grow flex flex-col justify-end">
                                 <h3 className="text-3xl font-bold text-white uppercase mb-4 leading-[1.1] group-hover:text-gold-primary transition-colors">
                                     {product.label}
@@ -54,8 +64,7 @@ export default function Product() {
                                     </p>
                                 )}
                             </div>
-
-                            <div className="relative z-10 px-10 py-7 bg-slate-950 flex items-center justify-between group-hover:bg-gold-primary transition-all duration-300">
+                            <div className="relative z-10 px-10 py-7 bg-navy-gradient flex items-center justify-between group-hover:bg-gold-primary transition-all duration-300">
                                 <span className="text-white group-hover:text-slate-900 font-bold uppercase text-[10px] tracking-[0.2em]">
                                     Explore Solution
                                 </span>
@@ -71,7 +80,7 @@ export default function Product() {
                         <>
                             <motion.div
                                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-                                onClick={() => setSelectedIdx(null)}
+                                onClick={closeSidebar} // ← pakai helper
                                 className="fixed inset-0 bg-slate-950/95 backdrop-blur-md z-[100]"
                             />
                             <motion.div
@@ -80,15 +89,13 @@ export default function Product() {
                                 className="fixed right-0 top-0 h-full w-full lg:w-[55%] bg-white z-[101] shadow-2xl overflow-y-auto"
                             >
                                 <div className="p-8 lg:p-16">
-                                    {/* Close Button */}
                                     <button
-                                        onClick={() => setSelectedIdx(null)}
+                                        onClick={closeSidebar} // ← pakai helper
                                         className="mb-10 flex items-center gap-2 text-red-500 border-2 border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-colors uppercase font-black text-[12px] tracking-widest group"
                                     >
                                         <X className="w-4 h-4 group-hover:rotate-90 transition-transform" /> Close
                                     </button>
 
-                                    {/* Sidebar Header */}
                                     <div className="mb-16">
                                         <h2 className="text-5xl font-black text-slate-900 uppercase leading-[0.9] mb-8 tracking-tighter">
                                             {selectedProduct.label}
@@ -104,44 +111,30 @@ export default function Product() {
                                     </div>
 
                                     <div className="flex flex-col gap-20">
-                                        {/* SECTION 01: OVERVIEW - Dihapus jika label kosong */}
                                         {selectedProduct.overview?.label && selectedProduct.overview.label.trim() !== "" && (
                                             <div>
                                                 <div className="flex items-center gap-4 mb-8">
                                                     <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
                                                         <FileText className="w-6 h-6" />
                                                     </div>
-                                                    <div>
-                                                        <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.overview.label}</h3>
-                                                    </div>
+                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.overview.label}</h3>
                                                 </div>
                                                 <div className="space-y-6 text-slate-600 text-lg leading-relaxed pl-4 border-l-2 border-slate-50">
-                                                    {selectedProduct.overview.description?.map((p: string, i: number) => (
-                                                        <p key={i}>{p}</p>
+                                                    {selectedProduct.overview.description?.map((desc: string, i: number) => (
+                                                        <p key={i}>{desc}</p>
                                                     ))}
                                                 </div>
                                             </div>
                                         )}
 
-                                        {/* SECTION 02: COMPONENTS - Dihapus jika label kosong */}
-                                        {selectedProduct.component?.label && selectedProduct.component.label.trim() !== "" && (
+                                        {selectedProduct.component?.list?.length > 0 && (
                                             <div>
                                                 <div className="flex items-center gap-4 mb-8">
                                                     <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
                                                         <Cog className="w-6 h-6" />
                                                     </div>
-                                                    <div>
-                                                        <h3 className="text-2xl font-bold text-slate-900 uppercase">{selectedProduct.component.label}</h3>
-                                                    </div>
+                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">Components</h3>
                                                 </div>
-
-                                                <div className="text-slate-600 text-lg leading-relaxed mb-10 pl-4 border-l-2 border-slate-50">
-                                                    {selectedProduct.component.description?.map((p: string, i: number) => (
-                                                        <p key={i}>{p}</p>
-                                                    ))}
-                                                </div>
-
-                                                {/* Technical Spec Box */}
                                                 <div className="bg-slate-900 rounded-[2.5rem] p-10 shadow-2xl overflow-hidden relative">
                                                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
                                                         {selectedProduct.component.list?.map((item: string, i: number) => (
@@ -157,17 +150,13 @@ export default function Product() {
                                             </div>
                                         )}
 
-                                        {/* SECTION 03: SUB-PRODUCTS (NEW) */}
                                         <div className="pb-20">
                                             <div className="flex items-center gap-4 mb-8">
                                                 <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
                                                     <Eye className="w-6 h-6" />
                                                 </div>
-                                                <div>
-                                                    <h3 className="text-2xl font-bold text-slate-900 uppercase">Product Gallery</h3>
-                                                </div>
+                                                <h3 className="text-2xl font-bold text-slate-900 uppercase">Product Gallery</h3>
                                             </div>
-
                                             <div className="grid grid-cols-2 gap-4">
                                                 {selectedProduct.list?.map((sub: any, i: number) => (
                                                     <motion.div
@@ -206,10 +195,9 @@ export default function Product() {
                         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-6">
                             <motion.div
                                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-                                onClick={() => setActiveSubProduct(null)}
+                                onClick={closeModal} // ← pakai helper
                                 className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl"
                             />
-
                             <motion.div
                                 initial={{ scale: 0.9, opacity: 0, y: 20 }}
                                 animate={{ scale: 1, opacity: 1, y: 0 }}
@@ -217,12 +205,11 @@ export default function Product() {
                                 className="relative w-full max-w-3xl bg-white overflow-hidden shadow-2xl flex flex-col border-2 border-gold-primary"
                             >
                                 <button
-                                    onClick={() => setActiveSubProduct(null)}
+                                    onClick={closeModal} // ← pakai helper
                                     className="absolute top-5 right-5 z-20 bg-slate-900/50 hover:bg-red-500 backdrop-blur-md p-2.5 rounded-full text-white transition-all duration-300 group"
                                 >
                                     <X className="w-5 h-5 group-hover:rotate-90 transition-transform" />
                                 </button>
-
                                 <div className="w-full bg-slate-100 flex items-center justify-center">
                                     <img
                                         src={`/assets/products/${activeSubProduct.image}`}
@@ -230,7 +217,6 @@ export default function Product() {
                                         className="w-full h-auto object-contain max-h-[70vh]"
                                     />
                                 </div>
-
                                 {activeSubProduct.description && activeSubProduct.description.trim() !== "" ? (
                                     <div className="p-8 md:p-12 flex flex-col items-center text-center bg-white">
                                         <div className="flex flex-col items-center mb-6">
@@ -239,7 +225,6 @@ export default function Product() {
                                             </h3>
                                             <div className="w-12 h-1 bg-gold-primary mt-4 rounded-full" />
                                         </div>
-
                                         <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-lg">
                                             {activeSubProduct.description}
                                         </p>
@@ -255,6 +240,7 @@ export default function Product() {
                         </div>
                     )}
                 </AnimatePresence>
+
             </div>
         </section>
     );

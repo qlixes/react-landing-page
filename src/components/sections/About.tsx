@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Globe2, Factory, History, Smile, ArrowRight, Crosshair, Flag } from 'lucide-react';
 import iso9001 from '@/assets/iso9001.jpg';
 import Counter from '@/components/ui/Counter';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function About() {
     const { t } = useTranslation();
@@ -32,17 +33,17 @@ export default function About() {
                             </span>
                         </div>
                         {/* Baris 1: Fokus pada Expertise dengan Dekorasi */}
-                        <h2 className="text-4xl md:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight">
+                        <h2 className="text-4xl md:text-7xl font-cormorant text-gray-900 leading-[1.1] tracking-tight">
                             {t('about.title_part1')}{" "}
-                            <span className="font-cormorant italic font-bold text-gold-primary relative inline-block">
+                            <span className="font-cormorant italic text-gold-primary relative inline-block">
                                 {t('about.title_mark_part1')}
                             </span>
                         </h2>
 
                         {/* Baris 2: Fokus pada Customers dengan Kontras Warna */}
-                        <h2 className="text-4xl md:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight">
+                        <h2 className="text-4xl md:text-7xl font-cormorant text-gray-900 leading-[1.1] tracking-tight">
                             {t('about.title_part2')}{" "}
-                            <span className="font-cormorant italic font-bold text-gold-primary relative inline-block">
+                            <span className="font-cormorant italic text-gold-primary relative inline-block">
                                 {t('about.title_mark_part2')}
                             </span>
                         </h2>
@@ -56,7 +57,7 @@ export default function About() {
                     </div>
 
                     <div className="lg:col-span-5 lg:col-start-8 space-y-6">
-                        <div className="p-8 bg-navy-primary border-4 border-gold-primary hover:shadow-xl transition-all duration-500">
+                        <div className="p-8 bg-navy-gradient border-4 border-gold-primary hover:shadow-xl transition-all duration-500">
                             <h3 className="text-sm font-bold uppercase tracking-widest text-gold-primary mb-3 flex items-center gap-2">
                                 <Crosshair className="w-4 h-4 text-gold-primary" />
                                 {t(`about.vision.label`)}
@@ -69,7 +70,7 @@ export default function About() {
                                 ))}
                             </div>
                         </div>
-                        <div className="p-8 bg-navy-primary border-4 border-gold-primary hover:shadow-xl transition-all duration-500">
+                        <div className="p-8 bg-navy-gradient border-4 border-gold-primary hover:shadow-xl transition-all duration-500">
                             <h3 className="text-sm font-bold uppercase tracking-widest text-gold-primary mb-3 flex items-center gap-2">
                                 <Flag className="w-4 h-4 text-gold-primary" />
                                 {t(`about.mission.label`)}
@@ -87,37 +88,94 @@ export default function About() {
                 </div>
 
                 {/* Brand Trust Section: Overlay Positioning */}
-                <div className="relative z-20">
-                    <div className="flex flex-row items-center justify-center gap-4 md:gap-8 px-4">
+                <div className="relative w-full overflow-hidden rounded-2xl border-2 border-gold-primary bg-radial-[at_center] from-navy-secondary to-navy-primary px-6 md:px-12">
 
-                        {/* ISO & Slogan Flex Wrapper */}
-                        <div className="flex flex-row items-center gap-4 md:gap-8 relative z-30">
-
-                            {/* 1. Floating ISO Logo - Forced Top Layer */}
-                            <motion.div
-                                animate={{ y: [0, -8, 0], rotateZ: [0, 0.5, -0.5, 0] }}
-                                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                                className="relative shrink-0"
-                            >
-                                <div className="absolute inset-0 bg-white/50 blur-xl rounded-full" />
-                                <img
-                                    src={iso9001}
-                                    crossOrigin="anonymous"
-                                    alt="ISO 9001"
-                                    className="w-32 h-auto md:w-48 relative z-40 drop-shadow-[0_10px_25px_rgba(0,0,0,0.15)]"
+                    {/* animate net */}
+                    <svg
+                        className="absolute inset-0 w-full h-full pointer-events-none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <defs>
+                            {/* Diamond pattern */}
+                            <pattern id="diamond-net" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+                                <path
+                                    d="M18 0 L36 18 L18 36 L0 18 Z"
+                                    fill="none"
+                                    stroke="var(--color-gold-primary)"
+                                    strokeWidth="0.8"
                                 />
-                            </motion.div>
+                            </pattern>
 
-                            {/* 2. Slogan with Consistent Alignment */}
-                            <div className="flex items-center gap-4 md:gap-8">
-                                <div className="h-10 md:h-16 w-px bg-gray-200" />
-                                <div className="flex flex-col">
-                                    <p className="font-cormorant font-bold italic text-lg md:text-4xl text-gray-800 leading-none">
-                                        "{t('about.brand.slogan')}"
-                                    </p>
-                                </div>
-                            </div>
+                            {/* Gradient mask: kiri muncul → tengah penuh → kanan fade */}
+                            <linearGradient id="fade-mask" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stopColor="white" stopOpacity="1" />
+                                <stop offset="40%" stopColor="white" stopOpacity="0" />
+                                <stop offset="60%" stopColor="white" stopOpacity="0" />
+                                <stop offset="100%" stopColor="white" stopOpacity="1" />
+                            </linearGradient>
+
+                            {/* Mask menggunakan gradient */}
+                            <mask id="net-mask">
+                                <rect width="100%" height="100%" fill="url(#fade-mask)" />
+                            </mask>
+                        </defs>
+
+                        {/* Rect pattern dengan mask gradient */}
+                        <motion.rect
+                            width="100%"
+                            height="100%"
+                            fill="url(#diamond-net)"
+                            mask="url(#net-mask)"
+                            animate={{ x: [0, 36] }}
+                            transition={{
+                                duration: 4,
+                                ease: "linear",
+                                repeat: Infinity,
+                            }}
+                        />
+
+                        {/* Shimmer layer — efek kilauan gold bergerak dari kiri ke kanan */}
+                        <motion.rect
+                            width="30%"
+                            height="100%"
+                            fill="url(#diamond-net)"
+                            opacity={0.15}
+                            animate={{ x: ["-30%", "130%"] }}
+                            transition={{
+                                duration: 5,
+                                ease: "easeInOut",
+                                repeat: Infinity,
+                                repeatDelay: 2,
+                            }}
+                        />
+                    </svg>
+
+                    <div className="relative z-10 flex flex-row items-center justify-between">
+
+                        {/* Globe */}
+                        <div className="flex-shrink-0 w-24 h-24 md:w-36 md:h-36 md:mx-10">
+                            <DotLottieReact
+                                src="/assets/globe.lottie"
+                                loop
+                                autoplay
+                                className="w-full h-full"
+                            />
                         </div>
+
+                        {/* Slogan */}
+                        <div className="flex flex-col items-start md:items-start text-left gap-2 flex-1 md:flex-none md:mx-10">
+                            <p className="font-cormorant font-bold italic text-xl md:text-4xl text-gold-secondary leading-snug">
+                                "{t('about.brand.slogan')}"
+                            </p>
+                        </div>
+
+                        <img
+                            src={iso9001}
+                            alt="ISO 9001 Certified"
+                            draggable="false"
+                            className="w-20 h-auto md:w-28 object-contain pointer-events-none select-none drop-shadow-[0_8px_20px_rgba(0,0,0,0.4)]"
+                        />
+
                     </div>
                 </div>
 
@@ -140,7 +198,7 @@ export default function About() {
                                 return (
                                     <div
                                         key={i}
-                                        className="relative flex flex-col items-center justify-center text-center p-10 md:p-14 border-[#d4bc82]/40 md:border-l first:border-l-0 border-b md:border-b-0 last:border-b-0"
+                                        className="relative flex flex-col items-center justify-center text-center p-10 md:p-14 border-gold-primary/40 border-b odd:border-r [&:nth-child(3)]:border-b-0 last:border-b-0 md:border-b-0 md:border-r-0 md:border-l md:first:border-l-0"
                                     >
                                         <div className="relative z-10 flex flex-col items-center">
                                             <div className="overflow-hidden mb-2">

@@ -2,7 +2,7 @@ import { animate, useMotionValue, useTransform } from "framer-motion";
 import { useEffect } from "react";
 import { motion } from 'framer-motion';
 
-export default function Counter({ value, delay }: { value: number; delay: number }) {
+const Counter = ({ value, delay }: { value: number; delay: number }) => {
 	const count = useMotionValue(0);
 	const rounded = useTransform(count, (latest) => Math.round(latest));
 
@@ -17,3 +17,5 @@ export default function Counter({ value, delay }: { value: number; delay: number
 
 	return <motion.span>{rounded}</motion.span>;
 }
+
+export default Counter;

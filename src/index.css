@@ -20,3 +20,9 @@
 		@apply font-jost font-semibold;
 	}
 }
+
+@layer utilities {
+	.bg-navy-gradient {
+		background: linear-gradient(135deg, var(--color-navy-primary) 0%, var(--color-navy-secondary) 100%);
+	}
+}

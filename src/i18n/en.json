@@ -516,5 +516,92 @@
             "<highlight>Serving Global Markets with Proven Expertise</highlight> — We supply high-quality machinery and deliver reliable processing solutions for a wide range of agro-industries, including tapioca, palm oil, corn starch, sweeteners, and rice protein. <highlight>Built on over 30 years of proven industry experience</highlight>, our equipment is engineered with precision and advanced technology to ensure stable performance, efficiency, and long-term operational reliability.",
             "With <highlight>installations in 15+ countries</highlight>, our solutions are widely adopted across Asia, Europe, and Russia, supporting diverse industrial applications. From standalone machines to complete production lines, we provide scalable solutions tailored to meet evolving global demands."
         ]
+    },
+    "contact": {
+        "address": [
+            "Jl. Lingkar Luar Kamal Raya,",
+            "Komp. Taman Palem Mutiara A8 No. 5,",
+            "Cengkareng - West Jakarta"
+        ],
+        "phone": [
+            "+62 821-8929-9995",
+            "+62 812-886-3428"
+        ],
+        "mail": [
+            "sunssebaruindonesia@gmail.com"
+        ],
+        "social_media": [
+            {
+                "link": "https://www.tiktok.com/@sunssebaru_indonesia",
+                "username": "@sunssebaru_indonesia",
+                "key": "tiktok"
+            },
+            {
+                "link": "",
+                "username": "@qlixes",
+                "key": "instagram"
+            },
+            {
+                "link": "",
+                "username": "",
+                "key": "facebook"
+            },
+            {
+                "link": "",
+                "username": "",
+                "key": "linkedin"
+            }
+        ],
+        "schedule": [
+            "Monday - Friday: 08:00 - 5 PM (West Indonesia Time)",
+            "Saturday & Sunday: 08:00 - 3 PM (West Indonesia Time)"
+        ],
+        "slogan": "Your Vision. Our Precision.",
+        "title": [
+            "Engineered for <highlight>Performance</highlight>.",
+            "Built for <highlight>Industry</highlight>."
+        ],
+        "description": [
+            "<highlight>Ready to build, upgrade, or optimize your processing plant?</highlight> From complete machinery systems to high-quality spare parts, we deliver everything you need to keep your operations running at peak performance. Our engineering team provides tailored solutions for any scale—efficient, reliable, and built to last."
+        ],
+        "mission": [
+            "Tell us your requirements — we deliver the solution."
+        ],
+        "form": [
+            {
+                "key": "name",
+                "type": "input",
+                "label": "Full Name",
+                "required": true
+            },
+            {
+                "key": "company",
+                "type": "input",
+                "label": "Company",
+                "required": false
+            },
+            {
+                "key": "email",
+                "type": "input",
+                "label": "Email",
+                "required": true
+            },
+            {
+                "key": "country",
+                "type": "input",
+                "label": "Country",
+                "required": true
+            },
+            {
+                "key": "message",
+                "type": "textarea",
+                "label": "Message",
+                "required": true
+            }
+        ],
+        "button": {
+            "sending": "Sending",
+            "submit": "Send Message"
+        }
     }
 }
