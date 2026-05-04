@@ -55,6 +55,8 @@
     },
     "product": {
         "badge": "我们的产品",
+        "explore": "解决方案",
+        "gallery": "产品中心",
         "lists": [
             {
                 "label": "木薯 / 淀粉加工机器",
@@ -474,8 +476,8 @@
     },
     "service": {
         "badge": "我们的业务",
-        "title": "Precision Built.",
-        "subtitle": "Industry Proven.",
+        "title": "精工制造。",
+        "subtitle": "行业验证。",
         "lists": [
             {
                 "key": "machine_design",

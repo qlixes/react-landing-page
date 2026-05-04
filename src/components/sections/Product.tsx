@@ -73,7 +73,7 @@ export default function Product() {
                             </div>
                             <div className="relative z-10 px-10 py-7 bg-navy-gradient flex items-center justify-between group-hover:bg-gold-primary transition-all duration-300">
                                 <span className="text-white group-hover:text-slate-900 font-bold uppercase text-[10px] tracking-[0.2em]">
-                                    Explore Solution
+                                    {t('product.explore')}
                                 </span>
                                 <ArrowRight className="w-5 h-5 text-gold-primary group-hover:text-slate-900 group-hover:translate-x-2 transition-all" />
                             </div>
@@ -178,7 +178,7 @@ export default function Product() {
                                                 <div className="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-gold-primary shadow-xl">
                                                     <Eye className="w-6 h-6" />
                                                 </div>
-                                                <h3 className="text-2xl font-bold text-slate-900 uppercase">Product Gallery</h3>
+                                                <h3 className="text-2xl font-bold text-slate-900 uppercase">{t('product.gallery')}</h3>
                                             </div>
                                             <div className="grid grid-cols-2 gap-4">
                                                 {selectedProduct.list?.map((sub: any, i: number) => (

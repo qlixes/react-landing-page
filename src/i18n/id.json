@@ -55,6 +55,8 @@
     },
     "product": {
         "badge": "Produk Kami",
+        "explore": "Temukan Solusi",
+        "gallery": "Katalog Produk",
         "lists": [
             {
                 "label": "Mesin Tepung Tapioka/Singkong",
@@ -475,8 +477,8 @@
     },
     "service": {
         "badge": "Apa yang Kami Lakukan",
-        "title": "Precision Built.",
-        "subtitle": "Industry Proven.",
+        "title": "DIBUAT DENGAN PRESISI.",
+        "subtitle": "TERBUKTI DI INDUSTRI.",
         "lists": [
             {
                 "key": "machine_design",

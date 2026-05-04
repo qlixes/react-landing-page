@@ -55,6 +55,8 @@
     },
     "product": {
         "badge": "Our Products",
+        "explore": "Explore Solution",
+        "gallery": "Product Gallery",
         "lists": [
             {
                 "label": "Tapioca/Cassava Starch Machines",
