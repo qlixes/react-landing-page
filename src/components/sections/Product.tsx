@@ -100,7 +100,7 @@ export default function Product() {
                                         onClick={closeSidebar} // ← pakai helper
                                         className="mb-10 flex items-center gap-2 text-red-500 border-2 border-red-500 py-2 px-4 hover:text-white hover:bg-red-500 transition-colors uppercase font-black text-[12px] tracking-widest group"
                                     >
-                                        <X className="w-4 h-4 group-hover:rotate-90 transition-transform" /> Close
+                                        <X className="w-4 h-4 group-hover:rotate-90 transition-transform" /> {t('product.close')}
                                     </button>
 
                                     <div className="mb-16">
