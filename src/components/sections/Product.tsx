@@ -215,51 +215,103 @@ export default function Product() {
                 {/* Sub-Product Detail Modal */}
                 <AnimatePresence>
                     {activeSubProduct && (
-                        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-6">
+                        <div className="fixed inset-0 z-[200] flex items-center justify-center p-3">
+                            {/* Backdrop */}
                             <motion.div
                                 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-                                onClick={closeModal} // ← pakai helper
+                                onClick={closeModal}
                                 className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl"
                             />
-                            <motion.div
-                                initial={{ scale: 0.9, opacity: 0, y: 20 }}
-                                animate={{ scale: 1, opacity: 1, y: 0 }}
-                                exit={{ scale: 0.9, opacity: 0, y: 20 }}
-                                className="relative w-full max-w-3xl bg-white overflow-hidden shadow-2xl flex flex-col border-2 border-gold-primary"
+
+                            {/* Modal wrapper — relative utk gradient overlay */}
+                            <div
+                                className="relative w-full max-w-3xl"
+                                style={{ maxHeight: 'min(90dvh, 90vh)' }}
                             >
-                                <button
-                                    onClick={closeModal} // ← pakai helper
-                                    className="absolute top-5 right-5 z-20 bg-slate-900/50 hover:bg-red-500 backdrop-blur-md p-2.5 rounded-full text-white transition-all duration-300 group"
+                                <motion.div
+                                    initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                                    animate={{ scale: 1, opacity: 1, y: 0 }}
+                                    exit={{ scale: 0.9, opacity: 0, y: 20 }}
+                                    className="relative w-full bg-white shadow-2xl border-2 border-gold-primary flex flex-col subproduct-scroll"
+                                    style={{
+                                        maxHeight: 'min(90dvh, 90vh)',
+                                        overflowY: 'auto',
+                                        overflowX: 'hidden',
+                                        // Custom scrollbar via CSS-in-JS tidak bisa di Tailwind,
+                                        // pakai class subproduct-scroll (inject via style tag di bawah)
+                                    }}
                                 >
-                                    <X className="w-5 h-5 group-hover:rotate-90 transition-transform" />
-                                </button>
-                                <div className="w-full bg-slate-100 flex items-center justify-center">
-                                    <img
-                                        src={`/assets/products/${activeSubProduct.image}`}
-                                        alt={activeSubProduct.name}
-                                        className="w-full h-auto object-contain max-h-[70vh]"
-                                    />
-                                </div>
-                                {activeSubProduct.description && activeSubProduct.description.trim() !== "" ? (
-                                    <div className="p-8 md:p-12 flex flex-col items-center text-center bg-white">
-                                        <div className="flex flex-col items-center mb-6">
-                                            <h3 className="text-2xl md:text-3xl font-black text-slate-900 uppercase leading-tight">
+                                    {/* Sticky close button — selalu visible walau scroll */}
+                                    <div className="sticky top-0 z-20 flex justify-end p-2.5 pointer-events-none">
+                                        <button
+                                            onClick={closeModal}
+                                            className="pointer-events-auto bg-slate-900/70 hover:bg-red-500 backdrop-blur-md p-2.5 rounded-full text-white transition-all duration-300 group shadow-lg"
+                                        >
+                                            <X className="w-5 h-5 group-hover:rotate-90 transition-transform" />
+                                        </button>
+                                    </div>
+
+                                    {/* Gambar */}
+                                    <div className="w-full bg-slate-100 flex items-center justify-center -mt-11 shrink-0">
+                                        <img
+                                            src={`/assets/products/${activeSubProduct.image}`}
+                                            alt={activeSubProduct.name}
+                                            className="w-full object-contain"
+                                            style={{ maxHeight: 'min(40vh, 280px)' }}
+                                        />
+                                    </div>
+
+                                    {/* Konten teks */}
+                                    {activeSubProduct.description && activeSubProduct.description.trim() !== "" ? (
+                                        <div className="p-6 md:p-10 flex flex-col items-center text-center bg-white shrink-0">
+                                            <div className="flex flex-col items-center mb-4">
+                                                <h3 className="text-xl md:text-3xl font-black text-slate-900 uppercase leading-tight">
+                                                    {activeSubProduct.name}
+                                                </h3>
+                                                <div className="w-12 h-1 bg-gold-primary mt-3 rounded-full" />
+                                            </div>
+                                            <p className="text-slate-500 text-sm md:text-lg leading-relaxed max-w-lg pb-10">
+                                                {activeSubProduct.description}
+                                            </p>
+                                        </div>
+                                    ) : (
+                                        <div className="p-4 bg-slate-600 text-center w-full shrink-0">
+                                            <h3 className="text-sm font-black text-white uppercase tracking-[0.3em]">
                                                 {activeSubProduct.name}
                                             </h3>
-                                            <div className="w-12 h-1 bg-gold-primary mt-4 rounded-full" />
                                         </div>
-                                        <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-lg">
-                                            {activeSubProduct.description}
-                                        </p>
-                                    </div>
-                                ) : (
-                                    <div className="p-5 bg-slate-600 text-center w-full">
-                                        <h3 className="text-sm font-black text-white uppercase tracking-[0.3em]">
-                                            {activeSubProduct.name}
-                                        </h3>
-                                    </div>
-                                )}
-                            </motion.div>
+                                    )}
+                                </motion.div>
+
+                                {/* Gradient fade bawah — visual cue "masih ada konten di bawah" */}
+                                <div
+                                    className="pointer-events-none absolute bottom-0 left-0 right-0 h-16 z-10 rounded-b-sm"
+                                    style={{
+                                        background: 'linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0) 100%)',
+                                    }}
+                                />
+                            </div>
+
+                            {/* Inject custom scrollbar style — tipis & branded gold */}
+                            <style>{`
+                                .subproduct-scroll::-webkit-scrollbar {
+                                    width: 4px;
+                                }
+                                .subproduct-scroll::-webkit-scrollbar-track {
+                                    background: #f1f5f9;
+                                }
+                                .subproduct-scroll::-webkit-scrollbar-thumb {
+                                    background: #C9A84C;
+                                    border-radius: 99px;
+                                }
+                                .subproduct-scroll::-webkit-scrollbar-thumb:hover {
+                                    background: #a07830;
+                                }
+                                .subproduct-scroll {
+                                    scrollbar-width: thin;
+                                    scrollbar-color: #C9A84C #f1f5f9;
+                                }
+                            `}</style>
                         </div>
                     )}
                 </AnimatePresence>
